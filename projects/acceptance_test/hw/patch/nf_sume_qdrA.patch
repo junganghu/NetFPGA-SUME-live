@@ -1,0 +1,88 @@
+--- a/project/nf_sume_qdrA_ex/nf_sume_qdrA_ex.srcs/sources_1/ip/nf_sume_qdrA/nf_sume_qdrA/example_design/rtl/example_top.v	2017-05-30 17:38:19.234169099 +0100
++++ b/project/nf_sume_qdrA_ex/nf_sume_qdrA_ex.srcs/sources_1/ip/nf_sume_qdrA/nf_sume_qdrA/example_design/rtl/example_top.v	2017-05-30 17:44:03.602169321 +0100
+    !
+    ! Copyright (C) 2015 Digilent Inc.
+    ! All rights reserved.
+    !
+    ! @NETFPGA_LICENSE_HEADER_START@
+    !
+    ! Licensed to NetFPGA C.I.C. (NetFPGA) under one or more contributor
+    ! license agreements.  See the NOTICE file distributed with this work for
+    ! additional information regarding copyright ownership.  NetFPGA licenses this
+    ! file to you under the NetFPGA Hardware-Software License, Version 1.0 (the
+    ! "License"); you may not use this file except in compliance with the
+    ! License.  You may obtain a copy of the License at:
+    !
+    !   http://www.netfpga-cic.org
+    !
+    ! Unless required by applicable law or agreed to in writing, Work distributed
+    ! under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+    ! CONDITIONS OF ANY KIND, either express or implied.  See the License for the
+    ! specific language governing permissions and limitations under the License.
+    !
+    ! @NETFPGA_LICENSE_HEADER_END@
+    !
+@@ -167,8 +167,19 @@
+    output wire                       qdriip_r_n,
+    output wire [3:0]        qdriip_bw_n,
+    output wire                       qdriip_dll_off_n,
+-   output                                       tg_compare_error,
+-   output                                       init_calib_complete,
++  
++   // 200MHz Clock
++   input                                        clk_ref_p,
++   input                                        clk_ref_n,
++
++   inout                                        iic_fpga_scl_io,
++   inout                                        iic_fpga_sda_io,
++   output [1:0]                                 iic_reset,
++   input                                        uart_rxd,
++   output                                       uart_txd,
++   output                                       led_error,
++   output                                       led_init_done,
++
+       
+ 
+    // System reset - Default polarity of sys_rst pin is Active Low.
+@@ -199,6 +210,9 @@
+    localparam integer Q_BITS   = clogb2(DATA_WIDTH - 1);
+ 
+   // Wire declarations
++   wire                              clk_ref_i;
++   wire                              tg_compare_error;
++   wire                              init_calib_complete;
+    wire                            clk;
+    wire                            rst_clk;
+    wire                            cmp_err;
+@@ -1240,6 +1254,29 @@
+       assign qdriip_vio2_sync_out  = 36'b0;
+     end
+   endgenerate
+-      
++
++
++ IBUFGDS # (
++     .DIFF_TERM      ("TRUE"),
++     .IBUF_LOW_PWR   ("FALSE")
++ ) u_ibufg_clk_ref (
++     .I              (clk_ref_p),
++     .IB             (clk_ref_n),
++     .O              (clk_ref_i)
++ );
++ 
++ system_wrapper system_i (
++     .gpio_in_0              ({tg_compare_error, init_calib_complete}),
++     .iic_fpga_scl_io        (iic_fpga_scl_io),
++     .iic_fpga_sda_io        (iic_fpga_sda_io),
++     .iic_reset              (iic_reset),
++     .reset                  (sys_rst),
++     .sysclk                 (clk_ref_i),
++     .uart_rxd               (uart_rxd),
++     .uart_txd               (uart_txd)
++ );       
++ 
++ assign led_error = tg_compare_error;
++ assign led_init_done = init_calib_complete;        
+ 
+ endmodule
+

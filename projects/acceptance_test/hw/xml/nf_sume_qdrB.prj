@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+# Copyright (c) 2015 University of Cambridge
+# All rights reserved.
+#
+# This software was developed by
+# Stanford University and the University of Cambridge Computer Laboratory under National Science Foundation under Grant No. CNS-0855268,
+# the University of Cambridge Computer Laboratory under EPSRC INTERNET Project EP/H040536/1 and
+# by the University of Cambridge Computer Laboratory under DARPA/AFRL contract FA8750-11-C-0249 ("MRC2"), 
+# as part of the DARPA MRC research programme.
+#
+# @NETFPGA_LICENSE_HEADER_START@
+#
+# Licensed to NetFPGA C.I.C. (NetFPGA) under one or more contributor
+# license agreements. See the NOTICE file distributed with this work for
+# additional information regarding copyright ownership. NetFPGA licenses this
+# file to you under the NetFPGA Hardware-Software License, Version 1.0 (the
+# "License"); you may not use this file except in compliance with the
+# License. You may obtain a copy of the License at:
+#
+# http://www.netfpga-cic.org
+#
+# Unless required by applicable law or agreed to in writing, Work distributed
+# under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+# CONDITIONS OF ANY KIND, either express or implied. See the License for the
+# specific language governing permissions and limitations under the License.
+#
+# @NETFPGA_LICENSE_HEADER_END@
+-->
+<Project NoOfControllers="1" >
+    <ModuleName>nf_sume_qdrB</ModuleName>
+    <dci_inouts_inputs>1</dci_inouts_inputs>
+    <dci_inputs>1</dci_inputs>
+    <Debug_En>ON</Debug_En>
+    <DataDepth_En>1024</DataDepth_En>
+    <LowPower_En>ON</LowPower_En>
+    <XADC_En>Enabled</XADC_En>
+    <TargetFPGA>xc7vx690t-ffg1761/-3</TargetFPGA>
+    <Version>4.0</Version>
+    <SystemClock>Differential</SystemClock>
+    <ReferenceClock>Use System Clock</ReferenceClock>
+    <SysResetPolarity>ACTIVE HIGH</SysResetPolarity>
+    <BankSelectionFlag>FALSE</BankSelectionFlag>
+    <InternalVref>0</InternalVref>
+    <dci_hr_inouts_inputs>50 Ohms</dci_hr_inouts_inputs>
+    <dci_cascade>0</dci_cascade>
+    <Controller number="0" >
+        <MemoryDevice>QDRIIPLUS_SRAM/Components-BL4/CY7C25652KV18-500BZC</MemoryDevice>
+        <TimePeriod>2000</TimePeriod>
+        <VccAuxIO>1.8V</VccAuxIO>
+        <PHYRatio></PHYRatio>
+        <InputClkFreq>200</InputClkFreq>
+        <DataWidth>36</DataWidth>
+        <DeepMemory>0</DeepMemory>
+        <CustomPart>FALSE</CustomPart>
+        <NewPartName></NewPartName>
+        <RowAddress>19</RowAddress>
+        <ColAddress></ColAddress>
+        <BankAddress></BankAddress>
+        <FixedLatencyMode>0</FixedLatencyMode>
+        <PhyLatency>0</PhyLatency>
+        <PinSelection>
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T36" SLEW="" name="qdriip_bw_n[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="R37" SLEW="" name="qdriip_bw_n[1]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V33" SLEW="" name="qdriip_bw_n[2]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V39" SLEW="" name="qdriip_bw_n[3]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="L39" SLEW="" name="qdriip_cq_n[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="K39" SLEW="" name="qdriip_cq_p[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="P32" SLEW="" name="qdriip_d[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="P38" SLEW="" name="qdriip_d[10]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U39" SLEW="" name="qdriip_d[11]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U38" SLEW="" name="qdriip_d[12]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U37" SLEW="" name="qdriip_d[13]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="R39" SLEW="" name="qdriip_d[14]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="R38" SLEW="" name="qdriip_d[15]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T35" SLEW="" name="qdriip_d[16]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U34" SLEW="" name="qdriip_d[17]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U32" SLEW="" name="qdriip_d[18]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U33" SLEW="" name="qdriip_d[19]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="N33" SLEW="" name="qdriip_d[1]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V34" SLEW="" name="qdriip_d[20]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V36" SLEW="" name="qdriip_d[21]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W37" SLEW="" name="qdriip_d[22]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W36" SLEW="" name="qdriip_d[23]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V35" SLEW="" name="qdriip_d[24]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W33" SLEW="" name="qdriip_d[25]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W32" SLEW="" name="qdriip_d[26]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T40" SLEW="" name="qdriip_d[27]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T42" SLEW="" name="qdriip_d[28]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T41" SLEW="" name="qdriip_d[29]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="N34" SLEW="" name="qdriip_d[2]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="U41" SLEW="" name="qdriip_d[30]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V38" SLEW="" name="qdriip_d[31]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="V41" SLEW="" name="qdriip_d[32]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W42" SLEW="" name="qdriip_d[33]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W41" SLEW="" name="qdriip_d[34]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W38" SLEW="" name="qdriip_d[35]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T32" SLEW="" name="qdriip_d[3]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="T34" SLEW="" name="qdriip_d[4]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="R35" SLEW="" name="qdriip_d[5]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="P36" SLEW="" name="qdriip_d[6]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="P35" SLEW="" name="qdriip_d[7]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="R32" SLEW="" name="qdriip_d[8]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="P37" SLEW="" name="qdriip_d[9]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="E42" SLEW="" name="qdriip_dll_off_n" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="DIFF_HSTL_II" PADName="R34" SLEW="" name="qdriip_k_n[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="DIFF_HSTL_II" PADName="R33" SLEW="" name="qdriip_k_p[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="A41" SLEW="" name="qdriip_q[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="F40" SLEW="" name="qdriip_q[10]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="F41" SLEW="" name="qdriip_q[11]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="H39" SLEW="" name="qdriip_q[12]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="G41" SLEW="" name="qdriip_q[13]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="G42" SLEW="" name="qdriip_q[14]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="H40" SLEW="" name="qdriip_q[15]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="H41" SLEW="" name="qdriip_q[16]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="J40" SLEW="" name="qdriip_q[17]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="M36" SLEW="" name="qdriip_q[18]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="M42" SLEW="" name="qdriip_q[19]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="A40" SLEW="" name="qdriip_q[1]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="L37" SLEW="" name="qdriip_q[20]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="L41" SLEW="" name="qdriip_q[21]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="L42" SLEW="" name="qdriip_q[22]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="K37" SLEW="" name="qdriip_q[23]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="K42" SLEW="" name="qdriip_q[24]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="K38" SLEW="" name="qdriip_q[25]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="J42" SLEW="" name="qdriip_q[26]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="P41" SLEW="" name="qdriip_q[27]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="R42" SLEW="" name="qdriip_q[28]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="R40" SLEW="" name="qdriip_q[29]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="B42" SLEW="" name="qdriip_q[2]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="P42" SLEW="" name="qdriip_q[30]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="P40" SLEW="" name="qdriip_q[31]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="M37" SLEW="" name="qdriip_q[32]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="N38" SLEW="" name="qdriip_q[33]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="M39" SLEW="" name="qdriip_q[34]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="M38" SLEW="" name="qdriip_q[35]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="B41" SLEW="" name="qdriip_q[3]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="D40" SLEW="" name="qdriip_q[4]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="D41" SLEW="" name="qdriip_q[5]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="D42" SLEW="" name="qdriip_q[6]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="E40" SLEW="" name="qdriip_q[7]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="F42" SLEW="" name="qdriip_q[8]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I_DCI" PADName="G39" SLEW="" name="qdriip_q[9]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AA40" SLEW="" name="qdriip_r_n" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AC41" SLEW="" name="qdriip_sa[0]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AC38" SLEW="" name="qdriip_sa[10]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AB41" SLEW="" name="qdriip_sa[11]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AD40" SLEW="" name="qdriip_sa[12]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AD41" SLEW="" name="qdriip_sa[13]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AE38" SLEW="" name="qdriip_sa[14]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AE42" SLEW="" name="qdriip_sa[15]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AA42" SLEW="" name="qdriip_sa[16]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AE40" SLEW="" name="qdriip_sa[17]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AE39" SLEW="" name="qdriip_sa[18]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AA39" SLEW="" name="qdriip_sa[1]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="Y40" SLEW="" name="qdriip_sa[2]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="Y42" SLEW="" name="qdriip_sa[3]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AB38" SLEW="" name="qdriip_sa[4]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AD38" SLEW="" name="qdriip_sa[5]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AC40" SLEW="" name="qdriip_sa[6]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AB39" SLEW="" name="qdriip_sa[7]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AC39" SLEW="" name="qdriip_sa[8]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="AD42" SLEW="" name="qdriip_sa[9]" IN_TERM="" />
+            <Pin VCCAUX_IO="NORMAL" IOSTANDARD="HSTL_I" PADName="W40" SLEW="" name="qdriip_w_n" IN_TERM="" />
+        </PinSelection>
+        <System_Clock>
+            <Pin PADName="AD32/AD33(CC_P/N)" Bank="16" name="sys_clk_p/n" />
+        </System_Clock>
+        <System_Control>
+            <Pin PADName="No connect" Bank="Select Bank" name="sys_rst" />
+            <Pin PADName="No connect" Bank="Select Bank" name="init_calib_complete" />
+            <Pin PADName="No connect" Bank="Select Bank" name="tg_compare_error" />
+        </System_Control>
+        <TimingParameters>
+            <Parameters/>
+        </TimingParameters>
+        <PortInterface>NATIVE</PortInterface>
+    </Controller>
+
+</Project>

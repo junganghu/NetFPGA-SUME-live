@@ -1,0 +1,54 @@
+--- a/project/nf_sume_qth_ibert_ex/imports/example_nf_sume_qth_ibert.v	2017-06-08 13:28:55.000000000 +0100
++++ b/project/nf_sume_qth_ibert_ex/imports/example_nf_sume_qth_ibert.v	2017-06-08 13:32:15.934661353 +0100
+    !
+    ! Copyright (C) 2015 Digilent Inc.
+    ! All rights reserved.
+    !
+    ! @NETFPGA_LICENSE_HEADER_START@
+    !
+    ! Licensed to NetFPGA C.I.C. (NetFPGA) under one or more contributor
+    ! license agreements.  See the NOTICE file distributed with this work for
+    ! additional information regarding copyright ownership.  NetFPGA licenses this
+    ! file to you under the NetFPGA Hardware-Software License, Version 1.0 (the
+    ! "License"); you may not use this file except in compliance with the
+    ! License.  You may obtain a copy of the License at:
+    !
+    !   http://www.netfpga-cic.org
+    !
+    ! Unless required by applicable law or agreed to in writing, Work distributed
+    ! under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+    ! CONDITIONS OF ANY KIND, either express or implied.  See the License for the
+    ! specific language governing permissions and limitations under the License.
+    !
+    ! @NETFPGA_LICENSE_HEADER_END@
+    !
+@@ -27,6 +27,12 @@
+   input  [(4*`C_NUM_QUADS)-1:0]   	RXP_I,
+   input                           	SYSCLKP_I,
+   input                           	SYSCLKN_I,
++  input                             RESET,
++  inout                             iic_fpga_scl_io,
++  inout                             iic_fpga_sda_io,
++  output [1:0]                      iic_reset,
++  input                             uart_rxd,
++  output                            uart_txd,
+   input  [`C_REFCLKS_USED-1:0]        	GTREFCLK0P_I,
+   input  [`C_REFCLKS_USED-1:0]        	GTREFCLK0N_I,
+   input  [`C_REFCLKS_USED-1:0]        	GTREFCLK1P_I,
+@@ -101,4 +107,14 @@
+       .GTREFCLK1_I(gtrefclk1_i)
+     );
+ 
++system_wrapper system_inst (
++    .iic_fpga_scl_io(iic_fpga_scl_io),
++    .iic_fpga_sda_io(iic_fpga_sda_io),
++    .iic_reset(iic_reset),
++    .reset(RESET),
++    .sysclk(sysclk_i),
++    .uart_rxd(uart_rxd),
++    .uart_txd(uart_txd)
++);
++
+ endmodule
+
+

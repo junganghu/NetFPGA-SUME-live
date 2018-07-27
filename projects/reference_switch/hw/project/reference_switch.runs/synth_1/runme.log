@@ -1,0 +1,27 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch/hw/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+Command: synth_design -top top -part xc7vx690tffg1761-3
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'output_port_lookup_ip' is locked:
+* IP definition 'switch_output_port_lookup (1.01)' relies on the following subcore(s) that were not found in the IP Catalog: xilinx:xilinx:cam:1.10
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Designutils 20-414] HRTInvokeSpec : No Verilog or VHDL sources specified
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 26 16:57:23 2018...

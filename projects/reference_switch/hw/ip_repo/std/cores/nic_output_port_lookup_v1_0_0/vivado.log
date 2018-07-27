@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Jul 26 16:44:51 2018
+# Process ID: 413
+# Log file: /home/maskerk/NetFPGA-SUME-live-master/lib/hw/std/cores/nic_output_port_lookup_v1_0_0/vivado.log
+# Journal file: /home/maskerk/NetFPGA-SUME-live-master/lib/hw/std/cores/nic_output_port_lookup_v1_0_0/vivado.jou
+#-----------------------------------------------------------
+source nic_output_port_lookup.tcl
+# set design nic_output_port_lookup
+# set top nic_output_port_lookup
+# set device xc7vx690t-3-ffg1761
+# set proj_dir ./synth
+# set ip_version 1.00
+# set lib_name NetFPGA
+# create_project -name ${design} -force -dir "./${proj_dir}" -part ${device} -ip
+# set_property source_mgmt_mode All [current_project]  
+# set_property top ${top} [current_fileset]
+# set_property ip_repo_paths $::env(SUME_FOLDER)/lib/hw/  [current_fileset]
+# puts "Creating Output Port Lookup IP"
+Creating Output Port Lookup IP
+# read_verilog "./hdl/output_port_lookup_cpu_regs_defines.v"
+# read_verilog "./hdl/output_port_lookup_cpu_regs.v"
+# read_verilog "./hdl/nic_output_port_lookup.v"
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# ipx::package_project
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/maskerk/NetFPGA-SUME-live-master/lib/hw'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/maskerk/NetFPGA-SUME-live-master/lib/hw' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is '/home/maskerk/NetFPGA-SUME-live-master/lib/hw/std/cores/nic_output_port_lookup_v1_0_0/synth'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+INFO: [IP_Flow 19-2418] Expression "((C_M_AXIS_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+INFO: [IP_Flow 19-2418] Expression "((C_S_AXIS_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+INFO: [IP_Flow 19-2418] Expression "((C_S_AXI_DATA_WIDTH / 8) - 1)": Will not convert operator '/' to XPATH 'div' to allow integer division if applicable.
+INFO: [IP_Flow 19-1842] HDL Parser: Found include file "hdl/output_port_lookup_cpu_regs_defines.v" from the top-level HDL file.
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI" of definition type "xilinx.com:interface:aximm:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "m_axis" of definition type "xilinx.com:interface:axis:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "s_axis" of definition type "xilinx.com:interface:axis:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI_ARESETN" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "axis_resetn" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI_ACLK" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "axis_aclk" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI_ARESETN" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "axis_resetn" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "S_AXI_ACLK" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "axis_aclk" of definition type "xilinx.com:signal:clock:1.0".
+# set_property name ${design} [ipx::current_core]
+# set_property library ${lib_name} [ipx::current_core]
+# set_property vendor_display_name {NetFPGA} [ipx::current_core]
+# set_property company_url {www.netfpga.org} [ipx::current_core]
+# set_property vendor {NetFPGA} [ipx::current_core]
+# set_property supported_families {{virtex7} {Production}} [ipx::current_core]
+# set_property taxonomy {{/NetFPGA/Generic}} [ipx::current_core]
+# set_property version ${ip_version} [ipx::current_core]
+# set_property display_name ${design} [ipx::current_core]
+# set_property description ${design} [ipx::current_core]
+# ipx::add_user_parameter {C_S_AXI_DATA_WIDTH} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_S_AXI_DATA_WIDTH" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_S_AXI_DATA_WIDTH]
+# set_property display_name {C_S_AXI_DATA_WIDTH} [ipx::get_user_parameters C_S_AXI_DATA_WIDTH]
+# set_property value {32} [ipx::get_user_parameters C_S_AXI_DATA_WIDTH]
+# set_property value_format {long} [ipx::get_user_parameters C_S_AXI_DATA_WIDTH]
+# ipx::add_user_parameter {C_S_AXI_ADDR_WIDTH} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_S_AXI_ADDR_WIDTH" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_S_AXI_ADDR_WIDTH]
+# set_property display_name {C_S_AXI_ADDR_WIDTH} [ipx::get_user_parameters C_S_AXI_ADDR_WIDTH]
+# set_property value {32} [ipx::get_user_parameters C_S_AXI_ADDR_WIDTH]
+# set_property value_format {long} [ipx::get_user_parameters C_S_AXI_ADDR_WIDTH]
+# ipx::add_user_parameter {C_M_AXIS_DATA_WIDTH} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_M_AXIS_DATA_WIDTH" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_M_AXIS_DATA_WIDTH]
+# set_property display_name {C_M_AXIS_DATA_WIDTH} [ipx::get_user_parameters C_M_AXIS_DATA_WIDTH]
+# set_property value {256} [ipx::get_user_parameters C_M_AXIS_DATA_WIDTH]
+# set_property value_format {long} [ipx::get_user_parameters C_M_AXIS_DATA_WIDTH]
+# ipx::add_user_parameter {C_S_AXIS_DATA_WIDTH} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_S_AXIS_DATA_WIDTH" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_S_AXIS_DATA_WIDTH]
+# set_property display_name {C_S_AXIS_DATA_WIDTH} [ipx::get_user_parameters C_S_AXIS_DATA_WIDTH]
+# set_property value {256} [ipx::get_user_parameters C_S_AXIS_DATA_WIDTH]
+# set_property value_format {long} [ipx::get_user_parameters C_S_AXIS_DATA_WIDTH]
+# ipx::add_user_parameter {C_M_AXIS_TUSER_WIDTH} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_M_AXIS_TUSER_WIDTH" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_M_AXIS_TUSER_WIDTH]
+# set_property display_name {C_M_AXIS_TUSER_WIDTH} [ipx::get_user_parameters C_M_AXIS_TUSER_WIDTH]
+# set_property value {128} [ipx::get_user_parameters C_M_AXIS_TUSER_WIDTH]
+# set_property value_format {long} [ipx::get_user_parameters C_M_AXIS_TUSER_WIDTH]
+# ipx::add_user_parameter {C_S_AXIS_TUSER_WIDTH} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_S_AXIS_TUSER_WIDTH" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_S_AXIS_TUSER_WIDTH]
+# set_property display_name {C_S_AXIS_TUSER_WIDTH} [ipx::get_user_parameters C_S_AXIS_TUSER_WIDTH]
+# set_property value {128} [ipx::get_user_parameters C_S_AXIS_TUSER_WIDTH]
+# set_property value_format {long} [ipx::get_user_parameters C_S_AXIS_TUSER_WIDTH]
+# ipx::add_user_parameter {SRC_PORT_POS} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "SRC_PORT_POS" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters SRC_PORT_POS]
+# set_property display_name {SRC_PORT_POS} [ipx::get_user_parameters SRC_PORT_POS]
+# set_property value {16} [ipx::get_user_parameters SRC_PORT_POS]
+# set_property value_format {long} [ipx::get_user_parameters SRC_PORT_POS]
+# ipx::add_user_parameter {DST_PORT_POS} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "DST_PORT_POS" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters DST_PORT_POS]
+# set_property display_name {SRC_PORT_POS} [ipx::get_user_parameters DST_PORT_POS]
+# set_property value {24} [ipx::get_user_parameters DST_PORT_POS]
+# set_property value_format {long} [ipx::get_user_parameters DST_PORT_POS]
+# ipx::add_user_parameter {C_BASEADDR} [ipx::current_core]
+WARNING: [IP_Flow 19-660] A user_parameter named "C_BASEADDR" already exists, cannot add it again.
+# set_property value_resolve_type {user} [ipx::get_user_parameters C_BASEADDR]
+# set_property display_name {C_BASEADDR} [ipx::get_user_parameters C_BASEADDR]
+# set_property value {0x00000000} [ipx::get_user_parameters C_BASEADDR]
+# set_property value_format {bitstring} [ipx::get_user_parameters C_BASEADDR]
+# ipx::add_subcore NetFPGA:NetFPGA:fallthrough_small_fifo:1.00 [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+# ipx::add_subcore NetFPGA:NetFPGA:fallthrough_small_fifo:1.00 [ipx::get_file_groups xilinx_anylanguagebehavioralsimulation -of_objects [ipx::current_core]]
+# ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces m_axis -of_objects [ipx::current_core]]
+# ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces s_axis -of_objects [ipx::current_core]]
+# ipx::infer_user_parameters [ipx::current_core]
+# ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-861] XGUI layout file basename "xgui/nic_output_port_lookup_v1_0.tcl" does not have the current IP <name>_v<version> format. If the IP name or version was changed recently, recreate this file to update the file format.
+INFO: [IP_Flow 19-3479] User Parameter 'C_M_AXIS_DATA_WIDTH': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_S_AXIS_DATA_WIDTH': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_M_AXIS_TUSER_WIDTH': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_S_AXIS_TUSER_WIDTH': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'SRC_PORT_POS': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'DST_PORT_POS (SRC_PORT_POS)': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_S_AXI_DATA_WIDTH': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_S_AXI_ADDR_WIDTH': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+# ipx::save_core [ipx::current_core]
+# update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+# close_project
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/maskerk/NetFPGA-SUME-live-master/lib/hw/std/cores/nic_output_port_lookup_v1_0_0/synth/nic_output_port_lookup.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/maskerk/NetFPGA-SUME-live-master/lib/hw/std/cores/nic_output_port_lookup_v1_0_0/synth/nic_output_port_lookup.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Jul 26 16:44:59 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 26 16:44:59 2018...
+# file delete -force ${proj_dir} 
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 26 16:44:59 2018...

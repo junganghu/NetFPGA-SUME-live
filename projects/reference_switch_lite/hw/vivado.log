@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jul 27 10:54:51 2018
+# Process ID: 1717
+# Log file: /home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch_lite/hw/vivado.log
+# Journal file: /home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch_lite/hw/vivado.jou
+#-----------------------------------------------------------
+source tcl/reference_switch_lite.tcl
+# set design $::env(NF_PROJECT_NAME) 
+# set top top
+# set device xc7vx690t-3-ffg1761
+# set proj_dir ./project
+# set public_repo_dir $::env(SUME_FOLDER)/lib/hw/
+# set xilinx_repo_dir $::env(XILINX_PATH)/data/ip/xilinx/
+# set repo_dir ./ip_repo
+# set bit_settings $::env(CONSTRAINTS)/generic_bit.xdc 
+# set project_constraints ./constraints/nf_sume_general.xdc
+# set nf_10g_constraints ./constraints/nf_sume_10g.xdc
+# source ./tcl/$::env(NF_PROJECT_NAME)_defines.tcl
+couldn't read file "./tcl/reference_switch_defines.tcl": no such file or directory
+    while executing
+"source ./tcl/$::env(NF_PROJECT_NAME)_defines.tcl"
+    (file "tcl/reference_switch_lite.tcl" line 47)
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 27 10:54:56 2018...

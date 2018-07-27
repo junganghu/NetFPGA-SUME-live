@@ -1,0 +1,8 @@
+he following cores have been commited from Digilent Inc. as part of the Acceptance Test for NetFPGA SUME board:
+
+- projects/acceptance_test/ip_repo/digilent/cores/d_clkfreq_detector/
+- projects/acceptance_test/ip_repo/digilent/cores/d_sdctrl/
+- projects/acceptance_test/ip_repo/digilent/cores/nf_sume_gpio_test/
+- projects/acceptance_test/ip_repo/std/cores/nf_axis_gen_chk/
+- projects/acceptance_test/ip_repo/std/cores/nf_sume_10g_interface/
+- projects/acceptance_test/ip_repo/std/cores/nf_sume_10g_interface_shared_logic/

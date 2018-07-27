@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jul 27 10:49:25 2018
+# Process ID: 939
+# Log file: /home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch_lite/hw/vivado.log
+# Journal file: /home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch_lite/hw/vivado.jou
+#-----------------------------------------------------------
+source tcl/reference_switch.tcl

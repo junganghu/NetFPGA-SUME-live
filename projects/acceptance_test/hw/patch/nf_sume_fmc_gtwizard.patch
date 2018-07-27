@@ -1,0 +1,172 @@
+--- a/project/nf_sume_fmc_gtwizard_ex/nf_sume_fmc_gtwizard_ex.srcs/constrs_1/imports/example_design/nf_sume_fmc_gtwizard_exdes.xdc	2017-06-27 10:20:04.000000000 +0100
++++ b/project/nf_sume_fmc_gtwizard_ex/nf_sume_fmc_gtwizard_ex.srcs/constrs_1/imports/example_design/nf_sume_fmc_gtwizard_exdes.xdc	2017-06-26 20:10:03.285597687 +0100
+    !
+    ! Copyright (C) 2015 Digilent Inc.
+    ! Copyright (C) 2017 Salvator Galea
+    ! All rights reserved.
+    !
+    ! @NETFPGA_LICENSE_HEADER_START@
+    !
+    ! Licensed to NetFPGA C.I.C. (NetFPGA) under one or more contributor
+    ! license agreements.  See the NOTICE file distributed with this work for
+    ! additional information regarding copyright ownership.  NetFPGA licenses this
+    ! file to you under the NetFPGA Hardware-Software License, Version 1.0 (the
+    ! "License"); you may not use this file except in compliance with the
+    ! License.  You may obtain a copy of the License at:
+    !
+    !   http://www.netfpga-cic.org
+    !
+    ! Unless required by applicable law or agreed to in writing, Work distributed
+    ! under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+    ! CONDITIONS OF ANY KIND, either express or implied.  See the License for the
+    ! specific language governing permissions and limitations under the License.
+    !
+    ! @NETFPGA_LICENSE_HEADER_END@
+    !
+@@ -75,7 +75,7 @@
+ 
+ 
+ 
+-create_clock -name drpclk_in_i -period 10.0 [get_ports SYSCLK_IN_P]
++create_clock -name drpclk_in_i -period 10.0 [get_nets drpclk_in_i]
+ 
+ 
+ 
+@@ -87,14 +87,36 @@
+ 
+ 
+ 
+-# User Clock Constraints
++## User Clock Constraints
+ 
+ 
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/use_probe_debug_circuit_2_reg*" && IS_SEQUENTIAL}]
+ 
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/en_adv_trigger_2_reg*" && IS_SEQUENTIAL}]
+ 
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_1a/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/en_adv_trigger_2_reg*" && IS_SEQUENTIAL}]
+ 
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/dout_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_in_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }]
+ 
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/dout_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_in_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }]
+ 
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/dout_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.halt_out_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }]
++
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/dout_reg*" && IS_SEQUENTIAL }] -to [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_reset_ctrl/asyncrounous_transfer.arm_out_transfer_inst/temp_reg0_reg*" && IS_SEQUENTIAL }]
++
++set_false_path -from [get_pins -hierarchical -filter {NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/u_srl_drive/CLK"}] -to [get_pins -hierarchical -filter {NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D"}]
++
++set_false_path -from [get_pins -hierarchical -filter { NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}] -to [get_pins -hierarchical -filter {NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D"}]
++
++set_false_path -from [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_ila_regs/reg_stream_ffd/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL} ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[*].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg*" && IS_SEQUENTIAL} ]
++set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_15/I_EN_CTL_EQ1.U_CTL/xsdb_reg_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[*].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg*" && IS_SEQUENTIAL} ]
++## When Advanced Trigger mode is enabled use the following in addition to the above
++
++set_false_path -from [get_cells -hierarchical -filter { NAME =~ "*ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[*].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg*" && IS_SEQUENTIAL}] -to [get_pins -hierarchical -filter {NAME =~ "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D"}]
++
++##set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/en_adv_trigger_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_88f/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg*" && IS_SEQUENTIAL } ]
++
++##set_false_path -from [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/en_adv_trigger_reg*" && IS_SEQUENTIAL } ] -to [get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_regs/reg_892/I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg*" && IS_SEQUENTIAL } ]
+ 
+ 
+ 
+@@ -107,8 +129,8 @@
+ 
+ ## LOC constrain for DRP_CLK_P/N 
+  
+-set_property LOC H19 [get_ports  SYSCLK_IN_P]
+-set_property LOC G18 [get_ports  SYSCLK_IN_N]
++##set_property LOC H19 [get_ports  SYSCLK_IN_P]
++##set_property LOC G18 [get_ports  SYSCLK_IN_N]
+  
+ ################################# mgt wrapper constraints #####################
+ 
+
+--- a/project/nf_sume_fmc_gtwizard_ex/nf_sume_fmc_gtwizard_ex.srcs/sources_1/imports/example_design/nf_sume_fmc_gtwizard_exdes.v	2017-06-27 10:20:04.000000000 +0100
++++ b/project/nf_sume_fmc_gtwizard_ex/nf_sume_fmc_gtwizard_ex.srcs/sources_1/imports/example_design/nf_sume_fmc_gtwizard_exdes.v	2017-06-27 10:02:52.944632640 +0100
+@@ -80,12 +80,16 @@
+ (
+     input wire  Q2_CLK0_GTREFCLK_PAD_N_IN,
+     input wire  Q2_CLK0_GTREFCLK_PAD_P_IN,
+-    input wire  SYSCLK_IN_P,
+-    input wire  SYSCLK_IN_N,
+-    input wire  GTTX_RESET_IN,
+-    input wire  GTRX_RESET_IN,
+-    input wire  CPLL_RESET_IN,
+-    input wire  QPLL_RESET_IN,
++	// 200MHz Clock
++    input  wire	SYSCLK_IN_P,
++    input  wire	SYSCLK_IN_N,
++
++	input  wire sys_rst,
++	inout  wire	iic_fpga_scl_io,
++	inout  wire	iic_fpga_sda_io,
++	output wire [1:0]	iic_reset,
++	input  wire	uart_rxd,
++	output wire	uart_txd,
+     output wire TRACK_DATA_OUT,
+     input  wire [9:0]   RXN_IN,
+     input  wire [9:0]   RXP_IN,
+@@ -95,7 +99,8 @@
+ 
+     wire soft_reset_i;
+     wire soft_reset_vio_i;
+-
++	wire sysclk_i;
++	wire mb_soft_reset;
+ //************************** Register Declarations ****************************
+     wire            gt_txfsmresetdone_i;
+     wire            gt_rxfsmresetdone_i;
+@@ -811,6 +816,7 @@
+ 
+     //----------------------------- Global Signals -----------------------------
+ 
++    reg             drpclk_in;
+     wire            drpclk_in_i;
+     wire            DRPCLK_IN;
+     wire            gt0_tx_system_reset_c;
+@@ -2123,9 +2129,44 @@
+     BUFG DRP_CLK_BUFG
+     (
+         .I                              (DRPCLK_IN),
++        .O                              (sysclk_i) 
++    );
++
++    BUFG drp_in_BUFG
++    (
++        .I                              (drpclk_in),
+         .O                              (drpclk_in_i) 
+     );
+ 
++
++always @(posedge sysclk_i)
++begin
++	if(sys_rst)
++		drpclk_in <= 1'b0;
++	else
++		drpclk_in <= ~drpclk_in;
++end
++
++system_wrapper system_i (
++    .gpio_out_0             (mb_soft_reset),
++    .gpio_in_0              (track_data_out_i),
++    .gpio_in_1              (gt0_error_count_i),
++    .gpio_in_2              (gt1_error_count_i),
++    .gpio_in_3              (gt2_error_count_i),
++    .gpio_in_4              (gt3_error_count_i),
++    .gpio_in_5              (gt4_error_count_i),
++    .gpio_in_6              (gt5_error_count_i),
++    .gpio_in_7              (gt6_error_count_i),
++    .gpio_in_8              (gt7_error_count_i),
++    .iic_fpga_scl_io        (iic_fpga_scl_io),
++    .iic_fpga_sda_io        (iic_fpga_sda_io),
++    .iic_reset              (iic_reset),
++    .reset                  (sys_rst),
++    .sysclk                 (sysclk_i),
++    .uart_rxd               (uart_rxd),
++    .uart_txd               (uart_txd)
++); 
++
+     //***********************************************************************//
+     //                                                                       //
+     //--------------------------- User Module Resets-------------------------//
