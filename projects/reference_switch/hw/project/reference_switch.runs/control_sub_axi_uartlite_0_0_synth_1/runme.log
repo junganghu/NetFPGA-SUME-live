@@ -1,0 +1,88 @@
+
+*** Running vivado
+    with args -log control_sub_axi_uartlite_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_sub_axi_uartlite_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source control_sub_axi_uartlite_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:01:31 . Memory (MB): peak = 1164.414 ; gain = 235.969 ; free physical = 1152 ; free virtual = 8850
+INFO: [Synth 8-638] synthesizing module 'control_sub_axi_uartlite_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_axi_uartlite_0_0/synth/control_sub_axi_uartlite_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2160]
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1615]
+INFO: [Synth 8-638] synthesizing module 'baudrate' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1418]
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (1#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1418]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:909]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_i_f' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_i_f' (3#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (4#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (6#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (7#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (8#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:909]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_i_f__parameterized0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_i_f__parameterized0' (8#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (9#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:408]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (10#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1615]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (11#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (11#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (11#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (11#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (12#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (13#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (14#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (15#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/2479/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2160]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_uartlite_0_0' (16#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_axi_uartlite_0_0/synth/control_sub_axi_uartlite_0_0.vhd:86]
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:33 . Memory (MB): peak = 1205.891 ; gain = 277.445 ; free physical = 1106 ; free virtual = 8805
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:01:33 . Memory (MB): peak = 1205.891 ; gain = 277.445 ; free physical = 1106 ; free virtual = 8804
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1638.074 ; gain = 0.004 ; free physical = 772 ; free virtual = 8470
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1638.074 ; gain = 709.629 ; free physical = 770 ; free virtual = 8469
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1638.074 ; gain = 709.629 ; free physical = 770 ; free virtual = 8469
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1638.074 ; gain = 709.629 ; free physical = 770 ; free virtual = 8469
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:02:40 . Memory (MB): peak = 1638.074 ; gain = 709.629 ; free physical = 770 ; free virtual = 8469
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:02:41 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 753 ; free virtual = 8451
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:02:50 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 734 ; free virtual = 8432
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:02:50 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 722 ; free virtual = 8421
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:02:50 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |     2|
+|2     |LUT2   |     9|
+|3     |LUT3   |    22|
+|4     |LUT4   |    13|
+|5     |LUT5   |    43|
+|6     |LUT6   |    17|
+|7     |SRL16E |    18|
+|8     |FDR    |     4|
+|9     |FDRE   |    70|
+|10    |FDSE   |    16|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1638.078 ; gain = 709.633 ; free physical = 714 ; free virtual = 8413
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:02:47 . Memory (MB): peak = 1638.078 ; gain = 594.129 ; free physical = 694 ; free virtual = 8393

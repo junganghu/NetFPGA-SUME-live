@@ -63,21 +63,21 @@ all:
 project:
 	@if [ -d ./${WS} ]; then rm -rf ./${WS}; fi
 	mkdir ./${WS}
-	/opt/Xilinx/SDK/2015.2/bin/xsdk -batch -source ./tcl/${PROJ}_xsdk.tcl
+	${xsdk} -batch -source ./tcl/${PROJ}_xsdk.tcl
 
 # Compile Command needs to run twice to get sw compiled correctly in DEBUG mode
 compile:
 	@if [ -d ./${WS} ]; then \
 		cp -a ./src/. ./${WS}/${PROJ}/app/src/; \
-		/opt/Xilinx/SDK/2015.2/bin/xsdk -wait -eclipseargs -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all -data ./${WS}/${PROJ} -vmargs -Dorg.eclipse.cdt.core.console=org.eclipse.cdt.core.systemConsole; \
-		/opt/Xilinx/SDK/2015.2/bin/xsdk -wait -eclipseargs -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all -data ./${WS}/${PROJ} -vmargs -Dorg.eclipse.cdt.core.console=org.eclipse.cdt.core.systemConsole; \
+		${xsdk} -wait -eclipseargs -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all -data ./${WS}/${PROJ} -vmargs -Dorg.eclipse.cdt.core.console=org.eclipse.cdt.core.systemConsole; \
+		${xsdk} -wait -eclipseargs -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all -data ./${WS}/${PROJ} -vmargs -Dorg.eclipse.cdt.core.console=org.eclipse.cdt.core.systemConsole; \
 	else \
 		echo "SDK_Workspace not found"; \
 	fi
 
 download:
 	@if [ -d ./../bitfiles ]; then \
-		xmd -tcl ./tcl/download.tcl `find ./../bitfiles -name "*.bit"`; \
+		${xmd} -tcl ./tcl/download.tcl `find ./../bitfiles -name "*.bit"`; \
 	else \
 		echo "Bitfile folder not found"; \
 	fi

@@ -1,0 +1,158 @@
+
+*** Running vivado
+    with args -log control_sub_pcie3_7x_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_sub_pcie3_7x_1_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source control_sub_pcie3_7x_1_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:01:37 . Memory (MB): peak = 1167.414 ; gain = 238.969 ; free physical = 469 ; free virtual = 9024
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/synth/control_sub_pcie3_7x_1_0.v:76]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_3_0_7vx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_3_0_7vx.v:116]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_top' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_top.v:82]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_init_ctrl_7vx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_init_ctrl_7vx.v:66]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_init_ctrl_7vx' (1#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_init_ctrl_7vx.v:66]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_tlp_tph_tbl_7vx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_tlp_tph_tbl_7vx.v:65]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1' (2#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_tlp_tph_tbl_7vx' (3#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_tlp_tph_tbl_7vx.v:65]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_7vx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_7vx.v:76]
+INFO: [Synth 8-638] synthesizing module 'PCIE_3_0' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:29106]
+INFO: [Synth 8-256] done synthesizing module 'PCIE_3_0' (4#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:29106]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx.v:73]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep_8k' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep_8k.v:67]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1__parameterized0' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1__parameterized0' (4#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1__parameterized1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1__parameterized1' (4#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep_8k' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep_8k.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep' (6#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_rep.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_req' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_req.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_8k' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_8k.v:68]
+INFO: [Synth 8-638] synthesizing module 'RAMB18E1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:41477]
+INFO: [Synth 8-256] done synthesizing module 'RAMB18E1' (7#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:41477]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_8k' (8#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_8k.v:68]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_req' (9#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_req.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_cpl' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_cpl.v:68]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_16k' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_16k.v:69]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1__parameterized2' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1__parameterized2' (9#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1__parameterized3' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1__parameterized3' (9#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1__parameterized4' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1__parameterized4' (9#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1__parameterized5' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1__parameterized5' (9#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:42143]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_16k' (10#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_16k.v:69]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx_cpl' (11#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx_cpl.v:68]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_bram_7vx' (12#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_bram_7vx.v:73]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_7vx' (13#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_7vx.v:76]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_force_adapt' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_force_adapt.v:83]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_force_adapt' (14#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_force_adapt.v:83]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_pipe_pipeline' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_pipe_pipeline.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_pipe_lane' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_pipe_lane.v:65]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_pipe_lane' (15#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_pipe_lane.v:65]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pcie_pipe_misc' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_pipe_misc.v:65]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_pipe_misc' (16#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_pipe_misc.v:65]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_pipe_pipeline' (17#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_pipe_pipeline.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_top' (18#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_top.v:82]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_gt_top' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gt_top.v:85]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_wrapper' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_wrapper.v:158]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_clock' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_clock.v:66]
+INFO: [Synth 8-638] synthesizing module 'BUFGCTRL' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:661]
+INFO: [Synth 8-256] done synthesizing module 'BUFGCTRL' (19#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:661]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (20#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (21#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_clock' (22#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_clock.v:66]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_qpll_reset' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_qpll_reset.v:66]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_qpll_reset' (23#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_qpll_reset.v:66]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_eq' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_eq.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_rxeq_scan' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_rxeq_scan.v:66]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_rxeq_scan' (24#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_rxeq_scan.v:66]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_eq' (25#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_eq.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_gt_common' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gt_common.v:57]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_qpll_drp' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_qpll_drp.v:64]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_qpll_drp' (26#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_qpll_drp.v:64]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_qpll_wrapper' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_qpll_wrapper.v:60]
+INFO: [Synth 8-638] synthesizing module 'GTHE2_COMMON' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:5668]
+INFO: [Synth 8-256] done synthesizing module 'GTHE2_COMMON' (27#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:5668]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_qpll_wrapper' (28#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_qpll_wrapper.v:60]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_gt_common' (29#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gt_common.v:57]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_user' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_user.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_user' (30#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_user.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_rate' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_rate.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_rate' (31#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_rate.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_sync' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_sync.v:72]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_sync' (32#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_sync.v:72]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_drp' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_drp.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_drp' (33#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_drp.v:67]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_gt_wrapper' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gt_wrapper.v:68]
+INFO: [Synth 8-638] synthesizing module 'GTHE2_CHANNEL' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4834]
+INFO: [Synth 8-256] done synthesizing module 'GTHE2_CHANNEL' (34#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4834]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_gtx_cpllpd_ovrd' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gtx_cpllpd_ovrd.v:55]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_gtx_cpllpd_ovrd' (35#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gtx_cpllpd_ovrd.v:55]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_gt_wrapper' (36#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gt_wrapper.v:68]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0_pipe_reset' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_reset.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_reset' (37#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_reset.v:67]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pipe_wrapper' (38#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pipe_wrapper.v:158]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_gt_top' (39#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_gt_top.v:85]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0_pcie_3_0_7vx' (40#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0_pcie_3_0_7vx.v:116]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0' (41#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/synth/control_sub_pcie3_7x_1_0.v:76]
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:01:41 . Memory (MB): peak = 1244.891 ; gain = 316.445 ; free physical = 387 ; free virtual = 8944
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:01:41 . Memory (MB): peak = 1244.891 ; gain = 316.445 ; free physical = 387 ; free virtual = 8944
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1698.645 ; gain = 0.004 ; free physical = 132 ; free virtual = 8507
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:02:58 . Memory (MB): peak = 1698.645 ; gain = 770.199 ; free physical = 130 ; free virtual = 8506
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:02:58 . Memory (MB): peak = 1698.645 ; gain = 770.199 ; free physical = 130 ; free virtual = 8506
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:02:58 . Memory (MB): peak = 1698.645 ; gain = 770.199 ; free physical = 130 ; free virtual = 8506
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:53 ; elapsed = 00:03:03 . Memory (MB): peak = 1698.645 ; gain = 770.199 ; free physical = 124 ; free virtual = 8499
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:03:26 . Memory (MB): peak = 1698.648 ; gain = 770.203 ; free physical = 125 ; free virtual = 8503
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:03:39 . Memory (MB): peak = 2074.641 ; gain = 1146.195 ; free physical = 143 ; free virtual = 7963
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:03:43 . Memory (MB): peak = 2115.664 ; gain = 1187.219 ; free physical = 109 ; free virtual = 7928
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:03:55 . Memory (MB): peak = 2166.852 ; gain = 1238.406 ; free physical = 127 ; free virtual = 7929
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:03:59 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7928
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:04:00 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7928
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:04:02 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7928
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:04:02 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7929
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:04:03 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7928
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:04:03 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7929
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     3|
+|2     |BUFGCTRL      |     1|
+|3     |CARRY4        |    96|
+|4     |GTHE2_CHANNEL |     8|
+|5     |GTHE2_COMMON  |     2|
+|6     |LUT1          |   376|
+|7     |LUT2          |   576|
+|8     |LUT3          |   922|
+|9     |LUT4          |   400|
+|10    |LUT5          |  1272|
+|11    |LUT6          |  1145|
+|12    |MMCME2_ADV    |     1|
+|13    |MUXF7         |   120|
+|14    |MUXF8         |     8|
+|15    |PCIE_3_0      |     1|
+|16    |RAMB18E1      |     4|
+|17    |RAMB36E1      |     1|
+|18    |RAMB36E1_1    |     2|
+|19    |RAMB36E1_2    |     4|
+|20    |SRL16E        |     6|
+|21    |SRLC32E       |    56|
+|22    |FDCE          |    15|
+|23    |FDPE          |    11|
+|24    |FDRE          |  4830|
+|25    |FDSE          |   141|
++------+--------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:04:03 . Memory (MB): peak = 2166.855 ; gain = 1238.410 ; free physical = 126 ; free virtual = 7928
+create_generated_clock: Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 2747.801 ; gain = 580.941 ; free physical = 136 ; free virtual = 7333
+synth_design: Time (s): cpu = 00:02:02 ; elapsed = 00:04:36 . Memory (MB): peak = 2748.801 ; gain = 1707.852 ; free physical = 135 ; free virtual = 7325

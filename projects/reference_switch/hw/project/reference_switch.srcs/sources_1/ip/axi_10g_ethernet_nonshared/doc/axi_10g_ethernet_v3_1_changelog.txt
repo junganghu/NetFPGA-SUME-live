@@ -1,0 +1,192 @@
+2016.4:
+ * Version 3.1 (Rev. 3)
+ * General: Refer to ten_gig_eth_mac_v15_1 and ten_gig_eth_pcs_pma_v6_0 core change logs for changes in the sub cores of this core.
+ * General: No functional changes
+ * Revision change in one or more subcores
+
+2016.3:
+ * Version 3.1 (Rev. 2)
+ * General: Refer to ten_gig_eth_mac_v15_1 and ten_gig_eth_pcs_pma_v6_0 core change logs for changes in the sub cores of this core.
+ * General: Changed use of Gearbox in GT from Asynchronous to Synchronous for KR designs for Ultrascale devices.
+ * Revision change in one or more subcores
+
+2016.2:
+ * Version 3.1 (Rev. 1)
+ * Revision change in one or more subcores
+
+2016.1:
+ * Version 3.1
+ * Added new feature - Link Interruption detection.
+ * Refer to ten_gig_eth_mac_v15_1 and ten_gig_eth_pcs_pma_v6_0 core change logs for changes in the sub cores of this core.
+ * Changes to HDL library management to support Vivado IP simulation library.
+ * Revision change in one or more subcores
+
+2015.4.2:
+ * Version 3.0 (Rev. 3)
+ * No changes
+
+2015.4.1:
+ * Version 3.0 (Rev. 3)
+ * No changes
+
+2015.4:
+ * Version 3.0 (Rev. 3)
+ * No Functional changes.
+ * Removing support for ultrascale plus devices for this product line
+
+2015.3:
+ * Version 3.0 (Rev. 2)
+ * No Functional changes.
+ * IP revision number added to HDL module, library, and include file names, to support designs with both locked and upgraded IP instances
+ * To bring out TXOUTCLKSEL and reset control for holding PCS reset so users can enable PRBS test in the core (as per AR 63704).
+ * Support for Ultrascale plus devices; the device support is limited to functional simulation only. Implementation and post implementation simulations might not be successful for certain devices.
+
+2015.2.1:
+ * Version 3.0 (Rev. 1)
+ * No changes
+
+2015.2:
+ * Version 3.0 (Rev. 1)
+ * Updated the default value of the 1588 Transmitted Timestamp Adjustment Control Register for GTYE3 permutations
+ * Updated the default value of the 1588 RX Fixed Latency MDIO register for GTYE3 permutations
+ * Allow 10GBASE-KR Autonegotiation FSMs to be recognised correctly by tools
+ * Update to 7Series GTHE2 transceiver parameters
+ * Added synchroniser on PCS loopback bit of configuration_vector for 32bit cores
+ * Fixed 2x-too-long wait timers in the 10GBASE-KR training block for Ultrascale devices
+ * Updated the sim_speedup_control logic to ensure that the correct timer values can always be obtained in the final bitstream
+ * Fixed incorrect mapping of PFC refresh values when configuration vector is used
+ * Fixed incorrect use of s_axi_rvalid in unmapped AXI-Lite address space (0x320-0x3FC)
+ * Fixed Stacked VLAN RX issue where frames with more than 4 VLAN headers can be incorrectly received
+ * Fixed corner case TX issue - frame just oversize and no tlast signalled on AXI4 Stream
+ * Fixed corner case TX issue - short frame (16-20 bytes) can corrupt custom preamble for following frame
+ * Limit user programmable IFG value to a maximum of 0xFC (1008 bytes)
+ * Changed AXI4-Lite address decode logic for Statistics registers to avoid a race condition in IES behavioral simulations
+ * Improved accuracy of the TX bytes valid statistics vector bits
+ * Update 64 bit example design FIFO to correctly respond to TREADY after TLAST
+
+2015.1:
+ * Version 3.0
+ * Product name changed from AXI 10G Ethernet Subsystem to 10G Ethernet Subsystem for Ethernet naming consistency across the Vivado IP catalog
+ * For Ultrascale devices, use of the Async 64/66 Gearbox has enabled the clocking logic to be simplified.  txusrclk2 is now used as the clock source for the data path logic.  Please consult the Product Guide for details.
+ * For Ultrascale devices, added an option to select the transceiver reference clock frequency used by the core
+ * Significant round-trip (transmitter and receiver) latency reductions for 64-bit datapath permutations
+ * Added 10GBASE-R 32-bit datapath options for the core to provide lower utilization and latency
+ * Added an option to enable the removal of the RX elastic buffer for all Ultrascale designs, to further reduce latency and utilization
+ * Added IEEE1588 timestamping support to Ultrascale 10GBASE-R permutations
+ * Added support for stacked VLAN frames (QinQ) as defined in IEEE802.1ad
+ * Added automatic enabling of FEC during Autonegotiation, where both link partners have FEC ability and at least one has requested FEC enablement
+ * Now using the Ultrascale GT Wizard Reset Helper Block for all cores on Ultrascale devices.  The dclk input from the core must be connected to a free-running clock source for Ultrascale devices.
+ * Some pins have been renamed, added and removed to support more features and be more agnostic with clock frequencies. Please consult the Product Guide for details.
+ * Added rxrecclk_out port in all configurations
+ * Added qpll0reset output port for Ultrascale devices to permutations that have shared logic in the example design.  This port is used to drive the the QPLLRESET input of the GT COMMON
+ * Added customization options to set the frequency of DRP clock and AXI-Lite clock.
+ * 7-Series 1588 permutations: connected up the reset port of the MMCM in the shared logic to the MMCM_RESET output signal from the tx_startup_fsm module to improve reset/initialization reliability.  The dclk input from the core must be connected to a free-running clock source for 1588 permutations.
+ * 7-Series 1588 permutations: connected up the QPLL_RESET output port of the tx_startup_fsm module to the QPLLRESET of the GT COMMON to improve reset/initialization reliability.
+ * 7-Series 1588 permutations: added txfsmreset_request output port for permutations that have shared logic in the example design. This is an OR of internal core transmitter reset sources (such as a PMA reset request).  txfsmreset_request will restart the tx_startup_fsm module to trigger a full reset and buffer bypass phase alignment of the transcevier to improve reset/initialization reliability.
+ * Added a new self-contained shared logic wrapper within the example design for permutations where shared logic is included in the example design.  This will reduce the amount of file editing when adding the shared to customer projects.
+ * Fixed example design FIFO to always recover cleanly after overflow conditions.
+ * Example design FIFO now instantiates dedicated clock domain crossing synchronization modules to be consistent with the rest of the example design.
+ * Example design transmitter FIFO enhanced to achieve full line rate performance under all operating conditions
+ * Enhanced demonstration test bench to terminate immediately after successful frame reception when in DEMO_TB mode rather than waiting for a long fixed duration before self terminating.
+
+2014.4.1:
+ * Version 2.0 (Rev. 2)
+ * Update to Ultrascale GT Wizard v1.5
+ * 1588 permutations using the Time-of-Day format: an issue has been fixed in the receiver timestamp whereby the seconds field could occasionally be in advance by 1 second
+ * Make it easier for the Auto-Negotiation Block to lock to and parse incoming data
+
+2014.4:
+ * Version 2.0 (Rev. 1)
+ * The AXI-Lite state machine in the example design is now repeatedly carrying out MDIO reads until it detects block lock in non pcs-loopback mode.
+
+2014.3:
+ * Version 2.0
+ * The core is now available in the Vivado IP catalog in addition to the IP integrator tool.
+ * 10GBASE-R permutations are now available with or without 1588 timestamping support.
+ * Added 10GBASE-KR options.
+ * Added MAC Management I/F and Priority Flow Control options.
+ * Added GUI option to include or exclude shareable logic resources in the core. There are port changes on the core as a result.
+ * Added optional transceiver control and status ports.
+ * Added optional transceiver DRP ports.
+ * Added example design.
+ * Added demonstration testbench.
+ * Added widgets to the core GUI to allow per-core-instance Transceiver and Reference Clock placement selection for Ultrascale devices
+ * Added Ultrascale Pre-Production support to all none 1588 permutations.
+ * Added support for Zync-7000 and 7-Series Defense-grade parts
+ * Supported 7-Series parts are now at Production status.
+ * Increased the accuracy of the hardware timestamps for IEEE1588 support.
+ * Updated the default value of the 1588 Transmitted Timestamp Adjustment Control Register: the latency adjust value is now set appropriately to adjust the timestamp point to the edge of the device, and the timestamp correction is now enabled by default.
+ * Updated the default value of the 1588 RX Fixed Latency MDIO register: the latency adjust value is now set appropriately to adjust the timestamp point to the edge of the device
+ * Input port default tie-off values for IP Integrator have been added to signal_detect and tx_fault and changed to logic 1 for reset_counter_done, tx_axis_aresetn and rx_axis_aresetn
+ * MDIO port address has been changed from 0x01 to 0x00.
+
+2014.2:
+ * Version 1.2 (Rev. 1)
+ * Fixed the transceiver reset logic in VHDL projects (Verilog projects had no issue).
+ * Fixed the 1-step logic so that correctionField modification can occur in an earlier byte position within the frame.  This will allow 1-step modification of layer 2 packets in addition to IPv UDP packets.
+ * Adjusted the 64-bit fractional nanoseconds field pipelining logic to ease timing closure.
+ * Updated to use the latest version of the underlying xlconstant subcore, no functional changes.
+
+2014.1:
+ * Version 1.2
+ * Added optional support for an alternative 1588 timer format.  This is a 64-bit fractional nanoseconds field, similar to the 1588 correctionField definition, which enables the ability to provide 1-step support for all device types (including transparent clocks).
+ * Fixed issues in the transmitter UPD checksum update logic.
+ * Fixed issues in the transmitter 1-step timestamp insertion logic.
+ * Fixed an issue in the receiver timestamping logic where the top 16-bits of the seconds field were held at zeros.
+ * Fixed XDC constraints around the handling of clock domain crossings in the receiver timestamping logic.
+
+2013.4:
+ * Version 1.1
+ * Add GTHE2 support.
+ * Set core state to Pre-production.
+ * Move RX timestamping position closer to transceiver.
+
+2013.3:
+ * Version 1.0
+ * Initial version
+
+(c) Copyright 2013 - 2017 Xilinx, Inc. All rights reserved.
+
+This file contains confidential and proprietary information
+of Xilinx, Inc. and is protected under U.S. and
+international copyright and other intellectual property
+laws.
+
+DISCLAIMER
+This disclaimer is not a license and does not grant any
+rights to the materials distributed herewith. Except as
+otherwise provided in a valid license issued to you by
+Xilinx, and to the maximum extent permitted by applicable
+law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+(2) Xilinx shall not be liable (whether in contract or tort,
+including negligence, or under any other theory of
+liability) for any loss or damage of any kind or nature
+related to, arising under or in connection with these
+materials, including for any direct, or any indirect,
+special, incidental, or consequential loss or damage
+(including loss of data, profits, goodwill, or any type of
+loss or damage suffered as a result of any action brought
+by a third party) even if such damage or loss was
+reasonably foreseeable or Xilinx had been advised of the
+possibility of the same.
+
+CRITICAL APPLICATIONS
+Xilinx products are not designed or intended to be fail-
+safe, or for use in any application requiring fail-safe
+performance, such as life-support or safety devices or
+systems, Class III medical devices, nuclear facilities,
+applications related to the deployment of airbags, or any
+other applications that could lead to death, personal
+injury, or severe property or environmental damage
+(individually and collectively, "Critical
+Applications"). Customer assumes the sole risk and
+liability of any use of Xilinx products in Critical
+Applications, subject only to applicable laws and
+regulations governing limitations on product liability.
+
+THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+PART OF THIS FILE AT ALL TIMES.

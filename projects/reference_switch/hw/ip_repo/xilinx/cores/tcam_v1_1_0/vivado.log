@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jul 27 09:31:15 2018
+# Process ID: 14205
+# Log file: /home/maskerk/NetFPGA-SUME-live-master/lib/hw/xilinx/cores/tcam_v1_1_0/vivado.log
+# Journal file: /home/maskerk/NetFPGA-SUME-live-master/lib/hw/xilinx/cores/tcam_v1_1_0/vivado.jou
+#-----------------------------------------------------------
+source tcam.tcl
+# set   lib_name       xilinx
+# set   ip_version     1.10
+# set   design         tcam
+# set   device         xc7vx690t-3-ffg1761
+# set   proj_dir       ip_proj
+# create_project -name ${design} -force -dir "./${proj_dir}" -part ${device} -ip
+# set_property source_mgmt_mode All [current_project]  
+# set_property top ${design} [current_fileset]
+# read_verilog "./hdl/verilog/tcam.v"
+# read_verilog "./hdl/verilog/tcam_wrapper.v"
+# read_vhdl "./hdl/vhdl/tcam/cam_init_file_pack_xst.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_pkg.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_input_ternary_ternenc.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_input_ternary.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_input.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_control.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_decoder.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_match_enc.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_regouts.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_srl16_ternwrcomp.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_srl16_wrcomp.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_srl16_block_word.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_srl16_block.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_srl16.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_blk_extdepth_prim.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_blk_extdepth.vhd"
+# read_vhdl "./hdl/vhdl/tcam/dmem.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem_blk.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_mem.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_rtl.vhd"
+# read_vhdl "./hdl/vhdl/tcam/cam_top.vhd"
+# update_compile_order -fileset sources_1
+# ipx::package_project
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+INFO: [IP_Flow 19-2228] Inferred bus interface "CLK" of definition type "xilinx.com:signal:clock:1.0".
+# set_property name ${design} [ipx::current_core]
+# set_property library ${lib_name} [ipx::current_core]
+# set_property vendor_display_name {xilinx} [ipx::current_core]
+# set_property company_url {www.xilinx.com} [ipx::current_core]
+# set_property vendor {xilinx} [ipx::current_core]
+# set_property supported_families {{virtex7} {Production}} [ipx::current_core]
+# set_property taxonomy {{/NetFPGA/Generic}} [ipx::current_core]
+# set_property version ${ip_version} [ipx::current_core]
+# set_property display_name ${design} [ipx::current_core]
+# set_property description ${design} [ipx::current_core]
+# ipx::infer_user_parameters [ipx::current_core]
+# ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-861] XGUI layout file basename "xgui/tcam_v1_0.tcl" does not have the current IP <name>_v<version> format. If the IP name or version was changed recently, recreate this file to update the file format.
+INFO: [IP_Flow 19-3479] User Parameter 'C_TCAM_ADDR_WIDTH (C Tcam Addr Width)': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_TCAM_DATA_WIDTH (C Tcam Data Width)': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_TCAM_ADDR_TYPE (C Tcam Addr Type)': The long integer parameter is not bounded by any range or validation values.
+INFO: [IP_Flow 19-3479] User Parameter 'C_TCAM_MATCH_ADDR_WIDTH (C Tcam Match Addr Width)': The long integer parameter is not bounded by any range or validation values.
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+# ipx::save_core [ipx::current_core]
+# close_project
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/maskerk/NetFPGA-SUME-live-master/lib/hw/xilinx/cores/tcam_v1_1_0/ip_proj/tcam.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/maskerk/NetFPGA-SUME-live-master/lib/hw/xilinx/cores/tcam_v1_1_0/ip_proj/tcam.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Jul 27 09:31:23 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 27 09:31:23 2018...
+# exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 27 09:31:23 2018...

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth" LaunchPart="xc7vx690tffg1761-3" LaunchTime="1532666109">
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/output_port_lookup_ip/output_port_lookup_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/input_arbiter_ip/input_arbiter_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/output_queues_ip/output_queues_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/control_sub/control_sub.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axi_10g_ethernet_nonshared/axi_10g_ethernet_nonshared.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_status/fifo_generator_status.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/inverter_0/inverter_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_1_9/fifo_generator_1_9.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/nf_10g_interface_ip/nf_10g_interface_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/axi_10g_ethernet_shared/axi_10g_ethernet_shared.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/nf_10g_interface_shared_ip/nf_10g_interface_shared_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_ip/clk_wiz_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/proc_sys_reset_ip/proc_sys_reset_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/identifier_ip/identifier_ip.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../create_ip/id_rom16x32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/axi_clocking.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/nf_datapath.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constraints">
+    <File Path="$PPRDIR/../../../../lib/hw/std/constraints/generic_bit.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../constraints/nf_sume_general.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../constraints/nf_sume_10g.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m08_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m06_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m02_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m01_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m05_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axis_fifo_10g_tx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_microblaze_0_xlconcat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axis_dwidth_dma_tx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axis_fifo_10g_rx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m07_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m03_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_pcie3_7x_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axis_dwidth_dma_rx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_s00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_nf_riffa_dma_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m04_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_m00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_auto_cc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axi_iic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_pcie_reset_inv_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_axi_clock_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="control_sub_mdm_1_0"/>
+</GenRun>

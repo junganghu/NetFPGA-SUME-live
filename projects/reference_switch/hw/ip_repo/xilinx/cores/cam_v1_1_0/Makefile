@@ -30,7 +30,7 @@
 .PHONY: sim
 
 all: clean
-	vivado -mode tcl -source cam.tcl 
+	${vivado} -mode tcl -source cam.tcl 
 
 update:
 	unzip xapp1151_Param_CAM.zip

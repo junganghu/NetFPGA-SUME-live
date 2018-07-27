@@ -1,26 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2015.2 (64-bit)              -->
+<!-- Product Version: Vivado v2016.4 (64-bit)              -->
 <!--                                                         -->
-<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="/home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.xpr">
+<Project Version="7" Minor="17" Path="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="92f94bd93ee7479bab7a9ccaf15dbf83"/>
+    <Option Name="Id" Val="024ec347a53d4ba4a6bd43e6fe1b4bb0"/>
     <Option Name="Part" Val="xc7vx690tffg1761-3"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
-    <Option Name="EnableCoreContainerForIPI" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/reference_switch.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/reference_switch.ip_user_files/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSANumComputeUnits" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="64"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/ip/output_port_lookup_ip/output_port_lookup_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/input_arbiter_ip/input_arbiter_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/output_queues_ip/output_queues_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/control_sub/control_sub.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axi_iic_0_0/control_sub_axi_iic_0_0.xci">
+          <Proxy FileSetName="control_sub_axi_iic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_pcie3_7x_1_0/control_sub_pcie3_7x_1_0.xci">
+          <Proxy FileSetName="control_sub_pcie3_7x_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axis_dwidth_dma_tx_0/control_sub_axis_dwidth_dma_tx_0.xci">
+          <Proxy FileSetName="control_sub_axis_dwidth_dma_tx_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axi_clock_converter_0_0/control_sub_axi_clock_converter_0_0.xci">
+          <Proxy FileSetName="control_sub_axi_clock_converter_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axis_fifo_10g_rx_0/control_sub_axis_fifo_10g_rx_0.xci">
+          <Proxy FileSetName="control_sub_axis_fifo_10g_rx_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axis_fifo_10g_tx_0/control_sub_axis_fifo_10g_tx_0.xci">
+          <Proxy FileSetName="control_sub_axis_fifo_10g_tx_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axis_dwidth_dma_rx_0/control_sub_axis_dwidth_dma_rx_0.xci">
+          <Proxy FileSetName="control_sub_axis_dwidth_dma_rx_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axi_interconnect_0_0/control_sub_axi_interconnect_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_axi_uartlite_0_0/control_sub_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="control_sub_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_s00_data_fifo_0/control_sub_s00_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_s00_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m00_data_fifo_0/control_sub_m00_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m00_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_nf_riffa_dma_1_0/control_sub_nf_riffa_dma_1_0.xci">
+          <Proxy FileSetName="control_sub_nf_riffa_dma_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_pcie_reset_inv_0/control_sub_pcie_reset_inv_0.xci">
+          <Proxy FileSetName="control_sub_pcie_reset_inv_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_xbar_0/control_sub_xbar_0.xci">
+          <Proxy FileSetName="control_sub_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_microblaze_0_0/control_sub_microblaze_0_0.xci">
+          <Proxy FileSetName="control_sub_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_microblaze_0_axi_intc_0/control_sub_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="control_sub_microblaze_0_axi_intc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_microblaze_0_axi_periph_0/control_sub_microblaze_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_mdm_1_0/control_sub_mdm_1_0.xci">
+          <Proxy FileSetName="control_sub_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_ilmb_bram_if_cntlr_0/control_sub_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="control_sub_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_ilmb_v10_0/control_sub_ilmb_v10_0.xci">
+          <Proxy FileSetName="control_sub_ilmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_xbar_1/control_sub_xbar_1.xci">
+          <Proxy FileSetName="control_sub_xbar_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_clk_wiz_1_0/control_sub_clk_wiz_1_0.xci">
+          <Proxy FileSetName="control_sub_clk_wiz_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_dlmb_bram_if_cntlr_0/control_sub_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="control_sub_dlmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_dlmb_v10_0/control_sub_dlmb_v10_0.xci">
+          <Proxy FileSetName="control_sub_dlmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_rst_clk_wiz_1_100M_0/control_sub_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="control_sub_rst_clk_wiz_1_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_lmb_bram_0/control_sub_lmb_bram_0.xci">
+          <Proxy FileSetName="control_sub_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_microblaze_0_xlconcat_0/control_sub_microblaze_0_xlconcat_0.xci">
+          <Proxy FileSetName="control_sub_microblaze_0_xlconcat_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m05_data_fifo_0/control_sub_m05_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m05_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m04_data_fifo_0/control_sub_m04_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m04_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m02_data_fifo_0/control_sub_m02_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m02_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m03_data_fifo_0/control_sub_m03_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m03_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m01_data_fifo_0/control_sub_m01_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m01_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_auto_cc_0/control_sub_auto_cc_0.xci">
+          <Proxy FileSetName="control_sub_auto_cc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m08_data_fifo_0/control_sub_m08_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m08_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m07_data_fifo_0/control_sub_m07_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m07_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="ip/control_sub_m06_data_fifo_0/control_sub_m06_data_fifo_0.xci">
+          <Proxy FileSetName="control_sub_m06_data_fifo_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="control_sub.bmm"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="control_sub_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="hdl/control_sub.v"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="hw_handoff/control_sub.hwh"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="hw_handoff/control_sub_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="control_sub.bd" FileRelPathName="hdl/control_sub.hwdef"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axi_10g_ethernet_nonshared/axi_10g_ethernet_nonshared.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo_generator_status/fifo_generator_status.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/inverter_0/inverter_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/fifo_generator_1_9/fifo_generator_1_9.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/nf_10g_interface_ip/nf_10g_interface_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/axi_10g_ethernet_shared/axi_10g_ethernet_shared.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/nf_10g_interface_shared_ip/nf_10g_interface_shared_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/clk_wiz_ip/clk_wiz_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/proc_sys_reset_ip/proc_sys_reset_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/identifier_ip/identifier_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../create_ip/id_rom16x32.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../hdl/axi_clocking.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../hdl/nf_datapath.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../hdl/top.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -39,10 +300,11 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
-      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
@@ -69,6 +331,210 @@
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
+    <FileSet Name="control_sub_axi_iic_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axi_iic_0_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axi_iic_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_pcie3_7x_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_pcie3_7x_1_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_pcie3_7x_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_axis_dwidth_dma_tx_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axis_dwidth_dma_tx_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axis_dwidth_dma_tx_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_axi_clock_converter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axi_clock_converter_0_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axi_clock_converter_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_axis_fifo_10g_rx_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axis_fifo_10g_rx_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axis_fifo_10g_rx_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_axis_fifo_10g_tx_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axis_fifo_10g_tx_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axis_fifo_10g_tx_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_axis_dwidth_dma_rx_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axis_dwidth_dma_rx_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axis_dwidth_dma_rx_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_axi_uartlite_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_axi_uartlite_0_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_axi_uartlite_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_s00_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_s00_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_s00_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m00_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m00_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m00_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_nf_riffa_dma_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_nf_riffa_dma_1_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_nf_riffa_dma_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_pcie_reset_inv_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_pcie_reset_inv_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_pcie_reset_inv_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_microblaze_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_microblaze_0_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_microblaze_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_microblaze_0_axi_intc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_microblaze_0_axi_intc_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_microblaze_0_axi_intc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_mdm_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_mdm_1_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_mdm_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_ilmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_ilmb_bram_if_cntlr_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_ilmb_bram_if_cntlr_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_ilmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_ilmb_v10_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_ilmb_v10_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_xbar_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_xbar_1">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_xbar_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_clk_wiz_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_clk_wiz_1_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_clk_wiz_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_dlmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_dlmb_bram_if_cntlr_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_dlmb_bram_if_cntlr_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_dlmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_dlmb_v10_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_dlmb_v10_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_rst_clk_wiz_1_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_rst_clk_wiz_1_100M_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_rst_clk_wiz_1_100M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_lmb_bram_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_lmb_bram_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_lmb_bram_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_microblaze_0_xlconcat_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_microblaze_0_xlconcat_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_microblaze_0_xlconcat_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m05_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m05_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m05_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m04_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m04_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m04_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m02_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m02_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m02_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m03_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m03_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m03_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m01_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m01_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m01_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_auto_cc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_auto_cc_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_auto_cc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m08_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m08_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m08_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m07_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m07_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m07_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="control_sub_m06_data_fifo_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/control_sub_m06_data_fifo_0">
+      <Config>
+        <Option Name="TopModule" Val="control_sub_m06_data_fifo_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -91,17 +557,400 @@
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
     </Simulator>
   </Simulators>
-  <Runs Version="1" Minor="9">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7vx690tffg1761-3" ConstrsSet="constraints" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1">
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7vx690tffg1761-3" ConstrsSet="constraints" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="constraints" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1">
+    <Run Id="synth" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7vx690tffg1761-3" ConstrsSet="constraints" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/synth" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axi_iic_0_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axi_iic_0_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axi_iic_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axi_iic_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_pcie3_7x_1_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_pcie3_7x_1_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_pcie3_7x_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_pcie3_7x_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_dwidth_dma_tx_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axis_dwidth_dma_tx_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_dwidth_dma_tx_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axis_dwidth_dma_tx_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axi_clock_converter_0_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axi_clock_converter_0_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axi_clock_converter_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axi_clock_converter_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_fifo_10g_rx_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axis_fifo_10g_rx_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_fifo_10g_rx_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axis_fifo_10g_rx_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_fifo_10g_tx_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axis_fifo_10g_tx_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_fifo_10g_tx_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axis_fifo_10g_tx_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_dwidth_dma_rx_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axis_dwidth_dma_rx_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_dwidth_dma_rx_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axis_dwidth_dma_rx_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_axi_uartlite_0_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_axi_uartlite_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_s00_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_s00_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_s00_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_s00_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m00_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m00_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m00_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m00_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_nf_riffa_dma_1_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_nf_riffa_dma_1_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_nf_riffa_dma_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_nf_riffa_dma_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_pcie_reset_inv_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_pcie_reset_inv_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_pcie_reset_inv_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_pcie_reset_inv_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_xbar_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_xbar_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_xbar_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_microblaze_0_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_microblaze_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_microblaze_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_microblaze_0_axi_intc_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_microblaze_0_axi_intc_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_microblaze_0_axi_intc_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_mdm_1_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_mdm_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_mdm_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_ilmb_bram_if_cntlr_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_ilmb_v10_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_ilmb_v10_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_ilmb_v10_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_xbar_1_synth_1" Type="Ft3:Synth" SrcSet="control_sub_xbar_1" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_xbar_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_xbar_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_clk_wiz_1_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_clk_wiz_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_clk_wiz_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_dlmb_bram_if_cntlr_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_dlmb_v10_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_dlmb_v10_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_dlmb_v10_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_rst_clk_wiz_1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_rst_clk_wiz_1_100M_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_rst_clk_wiz_1_100M_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_rst_clk_wiz_1_100M_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_lmb_bram_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_lmb_bram_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_lmb_bram_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_microblaze_0_xlconcat_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_microblaze_0_xlconcat_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_microblaze_0_xlconcat_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_microblaze_0_xlconcat_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m05_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m05_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m05_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m05_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m04_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m04_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m04_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m04_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m02_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m02_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m02_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m02_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m03_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m03_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m03_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m03_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m01_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m01_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m01_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m01_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_auto_cc_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_auto_cc_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_auto_cc_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_auto_cc_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m08_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m08_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m08_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m08_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m07_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m07_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m07_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m07_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m06_data_fifo_0_synth_1" Type="Ft3:Synth" SrcSet="control_sub_m06_data_fifo_0" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m06_data_fifo_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/control_sub_m06_data_fifo_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="constraints" Description="Uses multiple algorithms for optimization, placement, and routing to get potentially better results." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Performance_Explore" Flow="Vivado Implementation 2016">
+          <Desc>Uses multiple algorithms for optimization, placement, and routing to get potentially better results.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">1</Option>
+        </Step>
+        <Step Id="route_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">1</Option>
+        </Step>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="constraints" Description="Default settings for Implementation." SynthRun="synth" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -112,7 +961,585 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axi_iic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axi_iic_0_0" Description="Default settings for Implementation." SynthRun="control_sub_axi_iic_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_pcie3_7x_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_pcie3_7x_1_0" Description="Default settings for Implementation." SynthRun="control_sub_pcie3_7x_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_dwidth_dma_tx_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_dwidth_dma_tx_0" Description="Default settings for Implementation." SynthRun="control_sub_axis_dwidth_dma_tx_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axi_clock_converter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axi_clock_converter_0_0" Description="Default settings for Implementation." SynthRun="control_sub_axi_clock_converter_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_fifo_10g_rx_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_fifo_10g_rx_0" Description="Default settings for Implementation." SynthRun="control_sub_axis_fifo_10g_rx_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_fifo_10g_tx_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_fifo_10g_tx_0" Description="Default settings for Implementation." SynthRun="control_sub_axis_fifo_10g_tx_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axis_dwidth_dma_rx_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axis_dwidth_dma_rx_0" Description="Default settings for Implementation." SynthRun="control_sub_axis_dwidth_dma_rx_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_axi_uartlite_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_axi_uartlite_0_0" Description="Default settings for Implementation." SynthRun="control_sub_axi_uartlite_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_s00_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_s00_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_s00_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m00_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m00_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m00_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_nf_riffa_dma_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_nf_riffa_dma_1_0" Description="Default settings for Implementation." SynthRun="control_sub_nf_riffa_dma_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_pcie_reset_inv_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_pcie_reset_inv_0" Description="Default settings for Implementation." SynthRun="control_sub_pcie_reset_inv_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_xbar_0" Description="Default settings for Implementation." SynthRun="control_sub_xbar_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_microblaze_0_0" Description="Default settings for Implementation." SynthRun="control_sub_microblaze_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_microblaze_0_axi_intc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_microblaze_0_axi_intc_0" Description="Default settings for Implementation." SynthRun="control_sub_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_mdm_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_mdm_1_0" Description="Default settings for Implementation." SynthRun="control_sub_mdm_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." SynthRun="control_sub_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_ilmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_ilmb_v10_0" Description="Default settings for Implementation." SynthRun="control_sub_ilmb_v10_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_xbar_1_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_xbar_1" Description="Default settings for Implementation." SynthRun="control_sub_xbar_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_clk_wiz_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_clk_wiz_1_0" Description="Default settings for Implementation." SynthRun="control_sub_clk_wiz_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_dlmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_dlmb_bram_if_cntlr_0" Description="Default settings for Implementation." SynthRun="control_sub_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_dlmb_v10_0" Description="Default settings for Implementation." SynthRun="control_sub_dlmb_v10_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_rst_clk_wiz_1_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_rst_clk_wiz_1_100M_0" Description="Default settings for Implementation." SynthRun="control_sub_rst_clk_wiz_1_100M_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_lmb_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_lmb_bram_0" Description="Default settings for Implementation." SynthRun="control_sub_lmb_bram_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_microblaze_0_xlconcat_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_microblaze_0_xlconcat_0" Description="Default settings for Implementation." SynthRun="control_sub_microblaze_0_xlconcat_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m05_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m05_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m05_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m04_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m04_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m04_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m02_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m02_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m02_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m03_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m03_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m03_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m01_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m01_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m01_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_auto_cc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_auto_cc_0" Description="Default settings for Implementation." SynthRun="control_sub_auto_cc_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m08_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m08_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m08_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m07_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m07_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m07_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="control_sub_m06_data_fifo_0_impl_1" Type="Ft2:EntireDesign" Part="xc7vx690tffg1761-3" ConstrsSet="control_sub_m06_data_fifo_0" Description="Default settings for Implementation." SynthRun="control_sub_m06_data_fifo_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
   </Runs>
 </Project>

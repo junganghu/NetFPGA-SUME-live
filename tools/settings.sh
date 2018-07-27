@@ -28,9 +28,10 @@
 # @NETFPGA_LICENSE_HEADER_END@
 #
 
-export SUME_FOLDER=~/NetFPGA-SUME-live-master 
+export SUME_FOLDER=/home/zhs/NetFPGA-SUME-live-master 
+
 #export XILINX_PATH=/opt/Xilinx/Vivado/2016.4
-export XILINX_PATH=/opt/Xilinx/Vivado/2015.2
+export XILINX_PATH=/opt/Xilinx/Vivado/2016.4
 export NF_PROJECT_NAME=reference_switch
 export PROJECTS=${SUME_FOLDER}/projects
 export CONTRIB_PROJECTS=${SUME_FOLDER}/contrib-projects
@@ -44,9 +45,9 @@ export DRIVER_NAME=sume_riffa_v1_0_0
 export DRIVER_FOLDER=${SUME_FOLDER}/lib/sw/std/driver/${DRIVER_NAME}
 export APPS_FOLDER=${SUME_FOLDER}/lib/sw/std/apps/${DRIVER_NAME}
 
-export vivado=/opt/Xilinx/Vivado/2015.2/bin/vivado
-export xsdk=/opt/Xilinx/SDK/2015.2/bin/xsdk
-export xvhdl=/opt/Xilinx/Vivado/2015.2/bin/xvhdl
-export xelab=/opt/Xilinx/Vivado/2015.2/bin/xelab
-export xsim=/opt/Xilinx/Vivado/2015.2/bin/xsim
-export xvlog=/opt/Xilinx/Vivado/2015.2/bin/xvlog
+export vivado=/opt/Xilinx/Vivado/2016.4/bin/vivado
+export xsdk=/opt/Xilinx/SDK/2016.4/bin/xsdk
+export xvhdl=/opt/Xilinx/Vivado/2016.4/bin/xvhdl
+export xelab=/opt/Xilinx/Vivado/2016.4/bin/xelab
+export xsim=/opt/Xilinx/Vivado/2016.4/bin/xsim
+export xvlog=/opt/Xilinx/Vivado/2016.4/bin/xvlog

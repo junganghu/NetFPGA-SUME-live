@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jul 27 15:43:17 2018
+# Process ID: 17685
+# Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw
+# Command line: vivado
+# Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.log
+# Journal file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:01:08 . Memory (MB): peak = 6030.117 ; gain = 239.148 ; free physical = 1966 ; free virtual = 9378
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 27 15:47:09 2018...

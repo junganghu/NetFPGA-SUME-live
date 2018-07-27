@@ -1,10 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2015.2 (64-bit)
-# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
-# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Thu Jul 26 16:54:46 2018
-# Process ID: 3147
-# Log file: /home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.log
-# Journal file: /home/maskerk/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.jou
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jul 27 15:48:04 2018
+# Process ID: 17934
+# Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw
+# Command line: vivado -mode tcl -source tcl/export_hardware.tcl -tclargs reference_switch
+# Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.log
+# Journal file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.jou
 #-----------------------------------------------------------
-source tcl/reference_switch.tcl
+source tcl/export_hardware.tcl

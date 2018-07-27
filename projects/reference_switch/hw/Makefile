@@ -61,7 +61,7 @@ project: identifier
 	@if test -d project/; then \
 		echo "Project already exists"; \
 	else \
-		/opt/Xilinx/Vivado/2015.2/bin/vivado -mode batch -source tcl/reference_switch.tcl; \
+		${vivado} -mode batch -source tcl/reference_switch.tcl; \
 		if [ -f patch/${PROJ}.patch ]; then \
 			patch -p1 < patch/${PROJ}.patch; \
 		fi; \

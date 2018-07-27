@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jul 27 13:33:10 2018
+# Process ID: 13205
+# Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_ilmb_v10_0_synth_1
+# Command line: vivado -log control_sub_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_sub_ilmb_v10_0.tcl
+# Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_ilmb_v10_0_synth_1/control_sub_ilmb_v10_0.vds
+# Journal file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_ilmb_v10_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source control_sub_ilmb_v10_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:01:31 . Memory (MB): peak = 1157.410 ; gain = 228.969 ; free physical = 1172 ; free virtual = 8728
+INFO: [Synth 8-638] synthesizing module 'control_sub_ilmb_v10_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_ilmb_v10_0/synth/control_sub_ilmb_v10_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/162e/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'FDS' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'FDS' (1#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (2#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/162e/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_ilmb_v10_0' (3#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_ilmb_v10_0/synth/control_sub_ilmb_v10_0.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:01:32 . Memory (MB): peak = 1197.887 ; gain = 269.445 ; free physical = 1131 ; free virtual = 8686
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:01:32 . Memory (MB): peak = 1197.887 ; gain = 269.445 ; free physical = 1131 ; free virtual = 8686
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1541.617 ; gain = 0.004 ; free physical = 797 ; free virtual = 8353
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:02:38 . Memory (MB): peak = 1541.617 ; gain = 613.176 ; free physical = 796 ; free virtual = 8352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:02:38 . Memory (MB): peak = 1541.617 ; gain = 613.176 ; free physical = 796 ; free virtual = 8352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:02:38 . Memory (MB): peak = 1541.617 ; gain = 613.176 ; free physical = 796 ; free virtual = 8352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:02:38 . Memory (MB): peak = 1541.617 ; gain = 613.176 ; free physical = 796 ; free virtual = 8352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:38 . Memory (MB): peak = 1541.617 ; gain = 613.176 ; free physical = 796 ; free virtual = 8352
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1552.617 ; gain = 624.176 ; free physical = 780 ; free virtual = 8336
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1552.617 ; gain = 624.176 ; free physical = 780 ; free virtual = 8336
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.629 ; gain = 633.188 ; free physical = 771 ; free virtual = 8327
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDS  |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1561.633 ; gain = 633.191 ; free physical = 771 ; free virtual = 8327
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:02:45 . Memory (MB): peak = 1594.633 ; gain = 552.688 ; free physical = 740 ; free virtual = 8296

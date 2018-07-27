@@ -1,0 +1,66 @@
+
+*** Running vivado
+    with args -log control_sub_axis_dwidth_dma_rx_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_sub_axis_dwidth_dma_rx_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source control_sub_axis_dwidth_dma_rx_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:01:31 . Memory (MB): peak = 1158.418 ; gain = 229.969 ; free physical = 1160 ; free virtual = 8854
+INFO: [Synth 8-638] synthesizing module 'control_sub_axis_dwidth_dma_rx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_axis_dwidth_dma_rx_0/synth/control_sub_axis_dwidth_dma_rx_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_v1_1_10_axis_dwidth_converter' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/7aab/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_v1_1_10_axisc_downsizer' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/7aab/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_v1_1_10_axisc_downsizer' (1#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/7aab/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_11_axis_register_slice' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:770]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (2#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_11_axisc_register_slice' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_11_axisc_register_slice' (3#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (4#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_11_axis_register_slice' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:770]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_11_axis_register_slice__parameterized0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:770]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-638] synthesizing module 'axis_register_slice_v1_1_11_axisc_register_slice__parameterized0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_11_axisc_register_slice__parameterized0' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-638] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/fe67/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-256] done synthesizing module 'axis_register_slice_v1_1_11_axis_register_slice__parameterized0' (5#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/09aa/hdl/axis_register_slice_v1_1_vl_rfs.v:770]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_v1_1_10_axis_dwidth_converter' (6#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/7aab/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_dwidth_dma_rx_0' (7#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_axis_dwidth_dma_rx_0/synth/control_sub_axis_dwidth_dma_rx_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:32 . Memory (MB): peak = 1198.895 ; gain = 270.445 ; free physical = 1118 ; free virtual = 8812
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:01:32 . Memory (MB): peak = 1198.895 ; gain = 270.445 ; free physical = 1118 ; free virtual = 8812
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1637.445 ; gain = 0.004 ; free physical = 780 ; free virtual = 8474
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1637.445 ; gain = 708.996 ; free physical = 779 ; free virtual = 8473
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1637.445 ; gain = 708.996 ; free physical = 779 ; free virtual = 8473
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1637.445 ; gain = 708.996 ; free physical = 779 ; free virtual = 8473
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:02:39 . Memory (MB): peak = 1637.445 ; gain = 708.996 ; free physical = 775 ; free virtual = 8469
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:02:40 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 758 ; free virtual = 8453
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:02:49 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 740 ; free virtual = 8434
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:02:50 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 730 ; free virtual = 8424
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:02:50 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT3 |   275|
+|3     |LUT4 |     2|
+|4     |LUT5 |     3|
+|5     |LUT6 |     7|
+|6     |FDRE |   824|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:02:51 . Memory (MB): peak = 1637.449 ; gain = 709.000 ; free physical = 720 ; free virtual = 8414
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1637.449 ; gain = 595.496 ; free physical = 697 ; free virtual = 8391

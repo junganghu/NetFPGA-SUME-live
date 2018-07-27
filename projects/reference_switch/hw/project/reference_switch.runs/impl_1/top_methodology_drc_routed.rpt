@@ -1,0 +1,1568 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Fri Jul 27 15:29:27 2018
+| Host         : sume running 64-bit Ubuntu 14.04.5 LTS
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7vx690tffg1761-3
+| Speed File   : -3
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 297
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain        | 16         |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal             | 89         |
+| TIMING-2  | Warning  | Invalid primary clock source pin                       | 3          |
+| TIMING-3  | Warning  | Invalid primary clock on Clock Modifying Block         | 1          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree     | 3          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-11 | Warning  | Inappropriate max delay with datapath only option      | 64         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                            | 4          |
+| TIMING-18 | Warning  | Missing input or output delay                          | 18         |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                     | 72         |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint   | 8          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 9          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 9          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_rx_rst/reset_async4_reg in site SLICE_X160Y438 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_tx_rst/reset_async4_reg in site SLICE_X161Y438 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_async4_reg in site SLICE_X186Y432 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_async4_reg in site SLICE_X177Y428 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_async4_reg in site SLICE_X173Y425 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_async4_reg in site SLICE_X170Y401 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_async4_reg in site SLICE_X183Y423 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDPE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_async4_reg in site SLICE_X187Y411 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg in site SLICE_X160Y439 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_rx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg in site SLICE_X161Y439 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/reset_gen/sync_tx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg in site SLICE_X186Y433 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg in site SLICE_X177Y429 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg in site SLICE_X173Y426 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg in site SLICE_X170Y402 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg in site SLICE_X183Y424 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_rx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg in site SLICE_X187Y412 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/reset_gen/sync_tx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_0/inst/nf_10g_interface_shared_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_1/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_2/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_rx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[0].output_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[0].output_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[0].output_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[0].output_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[0].output_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[1].output_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[1].output_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[1].output_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[1].output_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[1].output_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[2].output_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[2].output_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[2].output_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[2].output_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#43 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[2].output_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#44 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[3].output_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#45 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[3].output_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#46 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[3].output_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#47 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[3].output_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#48 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[3].output_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#49 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[4].output_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#50 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[4].output_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#51 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[4].output_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#52 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[4].output_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#53 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/bram_output_queues_1/inst/output_queues[4].output_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#54 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[0].in_arb_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#55 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[0].in_arb_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#56 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[0].in_arb_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#57 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[0].in_arb_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#58 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[0].in_arb_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#59 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[0].in_arb_fifo/fifo/queue_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#60 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[1].in_arb_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#61 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[1].in_arb_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#62 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[1].in_arb_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#63 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[1].in_arb_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#64 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[1].in_arb_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#65 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[1].in_arb_fifo/fifo/queue_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#66 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[2].in_arb_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#67 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[2].in_arb_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#68 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[2].in_arb_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#69 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[2].in_arb_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#70 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[2].in_arb_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#71 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[2].in_arb_fifo/fifo/queue_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#72 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[3].in_arb_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#73 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[3].in_arb_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#74 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[3].in_arb_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#75 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[3].in_arb_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#76 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[3].in_arb_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#77 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[3].in_arb_fifo/fifo/queue_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#78 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[4].in_arb_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#79 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[4].in_arb_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#80 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[4].in_arb_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#81 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[4].in_arb_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#82 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[4].in_arb_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#83 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/input_arbiter_v1_0/inst/in_arb_queues[4].in_arb_fifo/fifo/queue_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#84 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/output_port_lookup_1/inst/input_fifo/fifo/queue_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#85 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/output_port_lookup_1/inst/input_fifo/fifo/queue_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#86 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/output_port_lookup_1/inst/input_fifo/fifo/queue_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#87 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/output_port_lookup_1/inst/input_fifo/fifo/queue_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#88 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/output_port_lookup_1/inst/input_fifo/fifo/queue_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#89 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance nf_datapath_0/output_port_lookup_1/inst/input_fifo/fifo/queue_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-2#1 Warning
+Invalid primary clock source pin  
+A primary clock axi_clk is created on an inappropriate pin axi_lite_bufg0/O. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#2 Warning
+Invalid primary clock source pin  
+A primary clock axi_clocking_i/clk_wiz_i/inst/clk_in1 is created on an inappropriate pin axi_clocking_i/clk_wiz_i/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#3 Warning
+Invalid primary clock source pin  
+A primary clock clk_200 is created on an inappropriate pin axi_clocking_i/clk_wiz_i/clk_out1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-3#1 Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock sys_clk is created on the output pin or net IBUFDS_GTE2_inst/O of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock axi_clk is defined downstream of clock sys_clk and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-4#2 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock axi_clocking_i/clk_wiz_i/inst/clk_in1 is defined downstream of clock fpga_sysclk_p and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-4#3 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock clk_200 is defined downstream of clock clk_out1_clk_wiz_ip and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-11#1 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[0]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#2 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[10]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[10]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#3 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[11]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[11]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#4 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[12]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[12]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#5 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[13]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[13]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#6 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[14]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[14]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#7 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[15]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[15]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#8 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[1]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#9 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[2]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[2]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#10 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[3]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[3]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#11 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[4]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[4]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#12 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[5]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[5]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#13 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[6]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[6]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#14 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[7]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[7]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#15 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[8]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[8]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#16 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[9]/C and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xmac/inst/bd_a1aa_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[9]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#17 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[0]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#18 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[10]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[10]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#19 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[11]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[11]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#20 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[12]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[12]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#21 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[13]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[13]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#22 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[14]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[14]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#23 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[15]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[15]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#24 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[1]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#25 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[2]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[2]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#26 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[3]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[3]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#27 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[4]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[4]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#28 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[5]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[5]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#29 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[6]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[6]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#30 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[7]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[7]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#31 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[8]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[8]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#32 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[9]/C and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[9]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#33 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[0]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#34 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[10]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[10]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#35 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[11]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[11]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#36 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[12]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[12]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#37 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[13]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[13]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#38 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[14]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[14]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#39 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[15]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[15]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#40 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[1]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#41 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[2]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[2]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#42 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[3]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[3]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#43 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[4]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[4]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#44 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[5]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[5]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#45 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[6]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[6]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#46 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[7]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[7]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#47 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[8]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[8]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#48 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[9]/C and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[9]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#49 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[0]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#50 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[10]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[10]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#51 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[11]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[11]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#52 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[12]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[12]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#53 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[13]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[13]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#54 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[14]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[14]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#55 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[15]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[15]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#56 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[1]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#57 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[2]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[2]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#58 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[3]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[3]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#59 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[4]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[4]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#60 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[5]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[5]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#61 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[6]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[6]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#62 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[7]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[7]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#63 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[8]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[8]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#64 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/rx/rx_pause_control/pause_quanta_reg[9]/C and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst/bd_7ad4_xmac_0_core/tx/tx_cntl/pause_tx_quanta_reg[9]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin control_sub_i/dma_sub/nf_riffa_dma_1/inst/riffa/riffa_inst/channels[0].channel/channel/rxPort/mainFifo/fifo/asyncCompare/rDir_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin control_sub_i/dma_sub/nf_riffa_dma_1/inst/riffa/riffa_inst/channels[0].channel/channel/txPort/gate/fifo/asyncCompare/rDir_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin control_sub_i/dma_sub/nf_riffa_dma_1/inst/riffa/riffa_inst/channels[1].channel/channel/rxPort/mainFifo/fifo/asyncCompare/rDir_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin control_sub_i/dma_sub/nf_riffa_dma_1/inst/riffa/riffa_inst/channels[1].channel/channel/txPort/gate/fifo/asyncCompare/rDir_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on i2c_clk relative to clock(s) sys_clk 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on i2c_data relative to clock(s) sys_clk 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on sfp0_tx_abs relative to clock(s) nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on sfp1_tx_abs relative to clock(s) nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on sfp2_tx_abs relative to clock(s) nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on sfp3_tx_abs relative to clock(s) nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on uart_rxd relative to clock(s) sys_clk 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on i2c_reset[0] relative to clock(s) sys_clk 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on i2c_reset[1] relative to clock(s) sys_clk 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on sfp0_rx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on sfp0_tx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on sfp1_rx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on sfp1_tx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on sfp2_rx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on sfp2_tx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on sfp3_rx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on sfp3_tx_led relative to clock(s) xphy_refclk_p 
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on uart_txd relative to clock(s) sys_clk 
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 261 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and clk_200 overrides a set_max_delay -datapath_only (position 378). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 261 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and clk_200 overrides a set_max_delay -datapath_only (position 381). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 261 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and clk_200 overrides a set_max_delay -datapath_only (position 382). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 262 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and axi_clk overrides a set_max_delay -datapath_only (position 379). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 330). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 334). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#7 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 338). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#8 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 342). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#9 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 344). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#10 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 350). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#11 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 352). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#12 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 358). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#13 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 360). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#14 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 366). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#15 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 368). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#16 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 272 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and clk_200 overrides a set_max_delay -datapath_only (position 374). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#17 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 328). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#18 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 332). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#19 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 336). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#20 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 340). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#21 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 346). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#22 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 348). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#23 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 354). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#24 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 356). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#25 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 362). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#26 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 364). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#27 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 370). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#28 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 273 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and xphy_refclk_p overrides a set_max_delay -datapath_only (position 372). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#29 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 276 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and clk_200 overrides a set_max_delay -datapath_only (position 289). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#30 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 276 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and clk_200 overrides a set_max_delay -datapath_only (position 293). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#31 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 276 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and clk_200 overrides a set_max_delay -datapath_only (position 384). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#32 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 277 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and userclk1 overrides a set_max_delay -datapath_only (position 290). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#33 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 277 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and userclk1 overrides a set_max_delay -datapath_only (position 292). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#34 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 277 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and userclk1 overrides a set_max_delay -datapath_only (position 383). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#35 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 277 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and userclk1 overrides a set_max_delay -datapath_only (position 386). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#36 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 277 in the Timing Constraints window in Vivado IDE) between clocks clk_200 and userclk1 overrides a set_max_delay -datapath_only (position 387). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#37 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 280 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and axi_clk overrides a set_max_delay -datapath_only (position 297). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#38 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 280 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and axi_clk overrides a set_max_delay -datapath_only (position 302). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#39 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 280 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and axi_clk overrides a set_max_delay -datapath_only (position 305). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#40 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 280 in the Timing Constraints window in Vivado IDE) between clocks userclk1 and axi_clk overrides a set_max_delay -datapath_only (position 317). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#41 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 281 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and userclk1 overrides a set_max_delay -datapath_only (position 295). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#42 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 281 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and userclk1 overrides a set_max_delay -datapath_only (position 300). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#43 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 281 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and userclk1 overrides a set_max_delay -datapath_only (position 307). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#44 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 281 in the Timing Constraints window in Vivado IDE) between clocks axi_clk and userclk1 overrides a set_max_delay -datapath_only (position 315). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#45 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 228). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#46 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 235). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#47 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 166). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#48 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 173). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#49 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 129). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#50 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 136). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#51 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 92). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#52 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 284 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 99). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#53 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 227). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#54 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 229). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#55 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 235). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#56 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 165). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#57 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 167). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#58 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 173). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#59 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 128). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#60 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 130). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#61 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 136). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#62 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 91). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#63 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 93). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#64 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 285 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 99). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#65 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 286 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 134). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#66 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 286 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 171). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#67 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 286 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 233). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#68 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 286 in the Timing Constraints window in Vivado IDE) between clocks nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK and xphy_refclk_p overrides a set_max_delay -datapath_only (position 97). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#69 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 287 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK overrides a set_max_delay -datapath_only (position 133). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#70 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 287 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK overrides a set_max_delay -datapath_only (position 170). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#71 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 287 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK overrides a set_max_delay -datapath_only (position 232). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#72 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 287 in the Timing Constraints window in Vivado IDE) between clocks xphy_refclk_p and nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK overrides a set_max_delay -datapath_only (position 96). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 276 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 277 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#3 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 278 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#4 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 279 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#5 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 280 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#6 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 281 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#7 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 282 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+TIMING-28#8 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock userclk1 is referenced by name inside timing constraint (see constraint position 283 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins control_sub_i/dma_sub/pcie3_7x_1/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/mmcm_i/CLKOUT2]
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_0*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 114))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_shared/bd_0/ip/ip_1/synth/bd_a1aa_xpcs_0.xdc (Line: 49))
+Related violations: <none>
+
+XDCC-1#2 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_0*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 115))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_shared/bd_0/ip/ip_1/synth/bd_a1aa_xpcs_0.xdc (Line: 51))
+Related violations: <none>
+
+XDCC-1#3 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_1*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 116))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 48))
+Related violations: <none>
+
+XDCC-1#4 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_1*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 117))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 50))
+Related violations: <none>
+
+XDCC-1#5 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_2*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 118))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 48))
+Related violations: <none>
+
+XDCC-1#6 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_2*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 119))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 50))
+Related violations: <none>
+
+XDCC-1#7 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_3*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 120))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 48))
+Related violations: <none>
+
+XDCC-1#8 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_3*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 121))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 50))
+Related violations: <none>
+
+XDCC-1#9 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 6.400 [get_ports xphy_refclk_p] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 92))
+Previous: create_clock -period 6.400 [get_ports xphy_refclk_p] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_shared/bd_0/ip/ip_1/synth/bd_a1aa_xpcs_0.xdc (Line: 47))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_0*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 114))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_shared/bd_0/ip/ip_1/synth/bd_a1aa_xpcs_0.xdc (Line: 49))
+Related violations: <none>
+
+XDCC-7#2 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_0*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 115))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_shared/bd_0/ip/ip_1/synth/bd_a1aa_xpcs_0.xdc (Line: 51))
+Related violations: <none>
+
+XDCC-7#3 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_1*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 116))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 48))
+Related violations: <none>
+
+XDCC-7#4 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_1*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 117))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 50))
+Related violations: <none>
+
+XDCC-7#5 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_2*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 118))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 48))
+Related violations: <none>
+
+XDCC-7#6 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_2*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 119))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 50))
+Related violations: <none>
+
+XDCC-7#7 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_3*gthe2_i/RXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 120))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *RXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 48))
+Related violations: <none>
+
+XDCC-7#8 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 3.103 [get_pins -hier -filter name=~*interface_3*gthe2_i/TXOUTCLK] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 121))
+Previous: create_clock -period 3.103 [get_pins -of_objects [get_cells * -hierarchical -filter {REF_NAME=~ GTHE2_CHANNEL}] -filter {NAME =~ *TXOUTCLK}] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_1/synth/bd_7ad4_xpcs_0.xdc (Line: 50))
+Related violations: <none>
+
+XDCC-7#9 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 6.400 [get_ports xphy_refclk_p] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc (Line: 92))
+Previous: create_clock -period 6.400 [get_ports xphy_refclk_p] (Source: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_shared/bd_0/ip/ip_1/synth/bd_a1aa_xpcs_0.xdc (Line: 47))
+Related violations: <none>
+
+
