@@ -25,15 +25,15 @@
 	<Run Id="control_sub_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="control_sub_lmb_bram_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="control_sub_microblaze_0_xlconcat_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_microblaze_0_xlconcat_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="control_sub_m05_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m05_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="control_sub_m04_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m04_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="control_sub_m02_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m02_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="control_sub_m03_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m03_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="control_sub_m01_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m01_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="control_sub_auto_cc_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="control_sub_m08_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m08_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="control_sub_m02_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m02_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="control_sub_m07_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m07_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="control_sub_m08_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m08_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="control_sub_m04_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m04_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="control_sub_m03_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m03_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="control_sub_m05_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m05_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="control_sub_m06_data_fifo_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_m06_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="control_sub_auto_cc_0_synth_1" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="synth" LaunchDir="/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
 		<Parent Id="control_sub_axi_iic_0_0_synth_1"/>
 		<Parent Id="control_sub_pcie3_7x_1_0_synth_1"/>
@@ -60,15 +60,15 @@
 		<Parent Id="control_sub_rst_clk_wiz_1_100M_0_synth_1"/>
 		<Parent Id="control_sub_lmb_bram_0_synth_1"/>
 		<Parent Id="control_sub_microblaze_0_xlconcat_0_synth_1"/>
-		<Parent Id="control_sub_m05_data_fifo_0_synth_1"/>
-		<Parent Id="control_sub_m04_data_fifo_0_synth_1"/>
-		<Parent Id="control_sub_m02_data_fifo_0_synth_1"/>
-		<Parent Id="control_sub_m03_data_fifo_0_synth_1"/>
 		<Parent Id="control_sub_m01_data_fifo_0_synth_1"/>
-		<Parent Id="control_sub_auto_cc_0_synth_1"/>
-		<Parent Id="control_sub_m08_data_fifo_0_synth_1"/>
+		<Parent Id="control_sub_m02_data_fifo_0_synth_1"/>
 		<Parent Id="control_sub_m07_data_fifo_0_synth_1"/>
+		<Parent Id="control_sub_m08_data_fifo_0_synth_1"/>
+		<Parent Id="control_sub_m04_data_fifo_0_synth_1"/>
+		<Parent Id="control_sub_m03_data_fifo_0_synth_1"/>
+		<Parent Id="control_sub_m05_data_fifo_0_synth_1"/>
 		<Parent Id="control_sub_m06_data_fifo_0_synth_1"/>
+		<Parent Id="control_sub_auto_cc_0_synth_1"/>
 	</Run>
 </Runs>
 

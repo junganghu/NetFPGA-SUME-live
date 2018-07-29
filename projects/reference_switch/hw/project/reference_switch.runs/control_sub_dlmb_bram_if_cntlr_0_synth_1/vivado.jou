@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Jul 27 13:42:16 2018
-# Process ID: 13568
+# Start of session at: Sat Jul 28 22:08:34 2018
+# Process ID: 22514
 # Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_dlmb_bram_if_cntlr_0_synth_1
 # Command line: vivado -log control_sub_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_sub_dlmb_bram_if_cntlr_0.tcl
 # Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_dlmb_bram_if_cntlr_0_synth_1/control_sub_dlmb_bram_if_cntlr_0.vds

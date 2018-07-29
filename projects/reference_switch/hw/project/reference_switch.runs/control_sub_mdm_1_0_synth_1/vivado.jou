@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Jul 27 13:26:51 2018
-# Process ID: 12958
+# Start of session at: Sat Jul 28 21:53:15 2018
+# Process ID: 21998
 # Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_mdm_1_0_synth_1
 # Command line: vivado -log control_sub_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_sub_mdm_1_0.tcl
 # Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_mdm_1_0_synth_1/control_sub_mdm_1_0.vds

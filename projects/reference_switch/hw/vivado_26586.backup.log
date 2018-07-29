@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Jul 29 11:10:52 2018
+# Process ID: 26586
+# Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw
+# Command line: vivado -mode tcl -source tcl/export_hardware.tcl -tclargs reference_switch
+# Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.log
+# Journal file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/vivado.jou
+#-----------------------------------------------------------
+source tcl/export_hardware.tcl
+# set design [lindex $argv 0] 
+# puts "\nOpening $design XPR project\n"
+
+Opening reference_switch XPR project
+
+# open_project project/$design.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:57 . Memory (MB): peak = 1166.805 ; gain = 172.879 ; free physical = 1826 ; free virtual = 10548
+# puts "\nOpening $design Implementation design\n"
+
+Opening reference_switch Implementation design
+
+# open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2391 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/.Xil/Vivado-26586-sume/dcp/top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0-PCIE_X0Y1.xdc:124]
+INFO: [Timing 38-2] Deriving generated clocks [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_pcie3_7x_1_0/source/control_sub_pcie3_7x_1_0-PCIE_X0Y1.xdc:124]
+create_generated_clock: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2607.383 ; gain = 745.238 ; free physical = 125 ; free virtual = 9152
+INFO: [Timing 38-2] Deriving generated clocks [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/clk_wiz_ip/clk_wiz_ip.xdc:57]
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/.Xil/Vivado-26586-sume/dcp/top_early.xdc]
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/.Xil/Vivado-26586-sume/dcp/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'xphy_refclk_p' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:92]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:114]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_0/inst/nf_10g_interface_shared_i/axi_10g_ethernet_i/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:115]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:116]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:117]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:118]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:119]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/RXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:120]
+WARNING: [Constraints 18-619] A clock with name 'nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK' already exists, overwriting the previous clock with the same name. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:121]
+INFO: [Timing 38-2] Deriving generated clocks [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/constraints/nf_sume_10g.xdc:149]
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/.Xil/Vivado-26586-sume/dcp/top.xdc]
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/.Xil/Vivado-26586-sume/dcp/top_late.xdc]
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/.Xil/Vivado-26586-sume/dcp/top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2919.926 ; gain = 0.000 ; free physical = 111 ; free virtual = 8857
+Restored from archive | CPU: 7.650000 secs | Memory: 110.801453 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2919.926 ; gain = 0.000 ; free physical = 111 ; free virtual = 8857
+Generating merged BMM file for the design top 'top'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 599 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 79 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM16X1S => RAM32X1S (RAMS32): 96 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 371 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 9 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+open_run: Time (s): cpu = 00:01:51 ; elapsed = 00:02:30 . Memory (MB): peak = 2919.930 ; gain = 1753.125 ; free physical = 284 ; free virtual = 8857
+# puts "\nCopying top.sysdef\n"
+
+Copying top.sysdef
+
+# file copy -force ./project/$design.runs/impl_1/top.sysdef ../sw/embedded/$design.hdf
+# exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 29 11:14:42 2018...

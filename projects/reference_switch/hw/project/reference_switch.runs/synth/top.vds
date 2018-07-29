@@ -2,15 +2,15 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Jul 27 14:00:34 2018
-# Process ID: 14558
+# Start of session at: Sat Jul 28 22:26:51 2018
+# Process ID: 23399
 # Current directory: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/top.vds
 # Journal file: /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1097.750 ; gain = 55.805 ; free physical = 1139 ; free virtual = 8746
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1097.754 ; gain = 55.805 ; free physical = 1298 ; free virtual = 9813
 Command: synth_design -top top -part xc7vx690tffg1761-3
 Starting synth_design
 WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
@@ -19,7 +19,7 @@ WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stal
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14580 
+INFO: Helper process launched with PID 23404 
 WARNING: [Synth 8-2507] parameter declaration becomes local in small_fifo with formal parameter declaration list [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/output_port_lookup_ip/hdl/small_fifo.v:67]
 WARNING: [Synth 8-2306] macro REG_ID_DEFAULT redefined [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/input_arbiter_ip/hdl/input_arbiter_cpu_regs_defines.v:44]
 WARNING: [Synth 8-2306] macro REG_ID_DEFAULT redefined [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/output_queues_ip/hdl/output_queues_cpu_regs_defines.v:44]
@@ -27,7 +27,7 @@ WARNING: [Synth 8-2306] macro REG_ID_DEFAULT redefined [/home/zhs/NetFPGA-SUME-l
 WARNING: [Synth 8-2306] macro REG_PKTIN_ADDR redefined [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/nf_10g_interface_ip/hdl/nf_10g_interface_cpu_regs_defines.v:75]
 WARNING: [Synth 8-2306] macro REG_PKTOUT_ADDR redefined [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/nf_10g_interface_ip/hdl/nf_10g_interface_cpu_regs_defines.v:80]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:02:37 . Memory (MB): peak = 1266.516 ; gain = 338.074 ; free physical = 895 ; free virtual = 8616
+Starting RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:02:42 . Memory (MB): peak = 1266.520 ; gain = 338.074 ; free physical = 1061 ; free virtual = 9684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/hdl/top.v:43]
 INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/hdl/top.v:432]
@@ -221,88 +221,88 @@ INFO: [Synth 8-256] done synthesizing module 'output_queues_ip' (45#1) [/home/zh
 INFO: [Synth 8-256] done synthesizing module 'nf_datapath' (46#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/hdl/nf_datapath.v:44]
 INFO: [Synth 8-638] synthesizing module 'control_sub' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:13]
 INFO: [Synth 8-638] synthesizing module 'dma_sub_imp_ETY9Q3' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:3061]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axi_clock_converter_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axi_clock_converter_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_clock_converter_0_0' (47#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axi_clock_converter_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axi_clock_converter_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axi_clock_converter_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_clock_converter_0_0' (47#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axi_clock_converter_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_clock_converter_0' of module 'control_sub_axi_clock_converter_0_0' requires 42 connections, but only 40 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:3986]
 INFO: [Synth 8-638] synthesizing module 'control_sub_axi_interconnect_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:953]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1CKXUZB' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4531]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m00_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m00_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m00_data_fifo_0' (48#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m00_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m00_data_fifo_0' (48#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m00_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1CKXUZB' (49#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4531]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_DJHRIH' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5005]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m01_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m01_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m01_data_fifo_0' (50#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m01_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m01_data_fifo_0' (50#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m01_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_DJHRIH' (51#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5005]
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_L1EJCA' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5347]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m02_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m02_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m02_data_fifo_0' (52#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m02_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m02_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m02_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m02_data_fifo_0' (52#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m02_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_L1EJCA' (53#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5347]
 INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1MTZV90' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5557]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m03_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m03_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m03_data_fifo_0' (54#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m03_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m03_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m03_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m03_data_fifo_0' (54#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m03_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1MTZV90' (55#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5557]
 INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1GP65RG' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5767]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m04_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m04_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m04_data_fifo_0' (56#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m04_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m04_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m04_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m04_data_fifo_0' (56#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m04_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1GP65RG' (57#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5767]
 INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_9HOIEQ' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5977]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m05_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m05_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m05_data_fifo_0' (58#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m05_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m05_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m05_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m05_data_fifo_0' (58#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m05_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_9HOIEQ' (59#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5977]
 INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_OQNG0H' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6187]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m06_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m06_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m06_data_fifo_0' (60#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m06_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m06_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m06_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m06_data_fifo_0' (60#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m06_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_OQNG0H' (61#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6187]
 INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1J7605R' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6397]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m07_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m07_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m07_data_fifo_0' (62#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m07_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m07_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m07_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m07_data_fifo_0' (62#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m07_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1J7605R' (63#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6397]
 INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_12JE735' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6607]
-INFO: [Synth 8-638] synthesizing module 'control_sub_m08_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m08_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_m08_data_fifo_0' (64#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_m08_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_m08_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m08_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_m08_data_fifo_0' (64#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_m08_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_12JE735' (65#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6607]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_IM4VT3' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7828]
-INFO: [Synth 8-638] synthesizing module 'control_sub_auto_cc_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_auto_cc_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_auto_cc_0' (66#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_auto_cc_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_s00_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_s00_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_s00_data_fifo_0' (67#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_auto_cc_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_auto_cc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_auto_cc_0' (66#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_auto_cc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_s00_data_fifo_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_s00_data_fifo_0' (67#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_s00_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_IM4VT3' (68#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7828]
-INFO: [Synth 8-638] synthesizing module 'control_sub_xbar_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_xbar_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_xbar_0' (69#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_xbar_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_xbar_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_xbar_0' (69#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_xbar_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_interconnect_0_0' (70#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:953]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axis_dwidth_dma_rx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_dwidth_dma_rx_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_dwidth_dma_rx_0' (71#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_dwidth_dma_rx_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axis_dwidth_dma_tx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_dwidth_dma_tx_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_dwidth_dma_tx_0' (72#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_dwidth_dma_tx_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axis_fifo_10g_rx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_fifo_10g_rx_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_fifo_10g_rx_0' (73#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_fifo_10g_rx_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axis_dwidth_dma_rx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_dwidth_dma_rx_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_dwidth_dma_rx_0' (71#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_dwidth_dma_rx_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axis_dwidth_dma_tx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_dwidth_dma_tx_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_dwidth_dma_tx_0' (72#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_dwidth_dma_tx_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axis_fifo_10g_rx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_fifo_10g_rx_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_fifo_10g_rx_0' (73#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_fifo_10g_rx_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axis_fifo_10g_rx' of module 'control_sub_axis_fifo_10g_rx_0' requires 19 connections, but only 16 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4270]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axis_fifo_10g_tx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_fifo_10g_tx_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_fifo_10g_tx_0' (74#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axis_fifo_10g_tx_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axis_fifo_10g_tx_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_fifo_10g_tx_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axis_fifo_10g_tx_0' (74#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axis_fifo_10g_tx_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axis_fifo_10g_tx' of module 'control_sub_axis_fifo_10g_tx_0' requires 19 connections, but only 16 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4287]
-INFO: [Synth 8-638] synthesizing module 'control_sub_nf_riffa_dma_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_nf_riffa_dma_1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_nf_riffa_dma_1_0' (75#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_nf_riffa_dma_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_nf_riffa_dma_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_nf_riffa_dma_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_nf_riffa_dma_1_0' (75#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_nf_riffa_dma_1_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'nf_riffa_dma_1' of module 'control_sub_nf_riffa_dma_1_0' requires 133 connections, but only 132 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4304]
-INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_pcie3_7x_1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0' (76#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_pcie3_7x_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie3_7x_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_pcie3_7x_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie3_7x_1_0' (76#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_pcie3_7x_1_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'pcie3_7x_1' of module 'control_sub_pcie3_7x_1_0' requires 90 connections, but only 88 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4437]
-INFO: [Synth 8-638] synthesizing module 'control_sub_pcie_reset_inv_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_pcie_reset_inv_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie_reset_inv_0' (77#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_pcie_reset_inv_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_pcie_reset_inv_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_pcie_reset_inv_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_pcie_reset_inv_0' (77#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_pcie_reset_inv_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'dma_sub_imp_ETY9Q3' (78#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:3061]
 INFO: [Synth 8-638] synthesizing module 'nf_mbsys_imp_UPW3WD' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7497]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axi_iic_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axi_iic_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_iic_0_0' (79#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axi_iic_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_axi_uartlite_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_uartlite_0_0' (80#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_clk_wiz_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_clk_wiz_1_0' (81#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axi_iic_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_iic_0_0' (79#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_axi_uartlite_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_axi_uartlite_0_0' (80#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_clk_wiz_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_clk_wiz_1_0' (81#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_clk_wiz_1_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'mbsys_imp_PO32LV' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6817]
-INFO: [Synth 8-638] synthesizing module 'control_sub_mdm_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_mdm_1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_mdm_1_0' (82#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_mdm_1_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_0' (83#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_axi_intc_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_axi_intc_0' (84#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_mdm_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_mdm_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_mdm_1_0' (82#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_mdm_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_0' (83#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_axi_intc_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_axi_intc_0' (84#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_microblaze_0_axi_intc_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_axi_periph_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:2467]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_M3U6M4' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4741]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_M3U6M4' (85#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:4741]
@@ -312,28 +312,28 @@ INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1BK5AWX' [/home/zhs/Ne
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1BK5AWX' (87#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:5215]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_19EXVQK' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7682]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_19EXVQK' (88#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7682]
-INFO: [Synth 8-638] synthesizing module 'control_sub_xbar_1' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_xbar_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_xbar_1' (89#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_xbar_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_xbar_1' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_xbar_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_xbar_1' (89#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_xbar_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'xbar' of module 'control_sub_xbar_1' requires 40 connections, but only 38 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:3020]
 INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_axi_periph_0' (90#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:2467]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_106435D' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7263]
-INFO: [Synth 8-638] synthesizing module 'control_sub_dlmb_bram_if_cntlr_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_dlmb_bram_if_cntlr_0' (91#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_dlmb_v10_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_dlmb_v10_0' (92#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_dlmb_bram_if_cntlr_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_dlmb_bram_if_cntlr_0' (91#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_dlmb_v10_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_dlmb_v10_0' (92#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'control_sub_dlmb_v10_0' requires 25 connections, but only 24 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7409]
-INFO: [Synth 8-638] synthesizing module 'control_sub_ilmb_bram_if_cntlr_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_ilmb_bram_if_cntlr_0' (93#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_ilmb_v10_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_ilmb_v10_0' (94#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_ilmb_bram_if_cntlr_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_ilmb_bram_if_cntlr_0' (93#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_ilmb_v10_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_ilmb_v10_0' (94#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'control_sub_ilmb_v10_0' requires 25 connections, but only 24 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7455]
-INFO: [Synth 8-638] synthesizing module 'control_sub_lmb_bram_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_lmb_bram_0' (95#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_lmb_bram_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_lmb_bram_0' (95#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_lmb_bram_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_106435D' (96#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7263]
-INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_xlconcat_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_microblaze_0_xlconcat_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_xlconcat_0' (97#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_microblaze_0_xlconcat_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'control_sub_rst_clk_wiz_1_100M_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_rst_clk_wiz_1_100M_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'control_sub_rst_clk_wiz_1_100M_0' (98#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/realtime/control_sub_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_microblaze_0_xlconcat_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_microblaze_0_xlconcat_0' (97#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'control_sub_rst_clk_wiz_1_100M_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_sub_rst_clk_wiz_1_100M_0' (98#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/realtime/control_sub_rst_clk_wiz_1_100M_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'control_sub_rst_clk_wiz_1_100M_0' requires 10 connections, but only 9 given [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7251]
 INFO: [Synth 8-256] done synthesizing module 'mbsys_imp_PO32LV' (99#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:6817]
 INFO: [Synth 8-256] done synthesizing module 'nf_mbsys_imp_UPW3WD' (100#1) [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:7497]
@@ -634,7 +634,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port DINB[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:28 ; elapsed = 00:05:35 . Memory (MB): peak = 1674.176 ; gain = 745.734 ; free physical = 480 ; free virtual = 8203
+Finished RTL Elaboration : Time (s): cpu = 00:03:32 ; elapsed = 00:05:40 . Memory (MB): peak = 1674.180 ; gain = 745.734 ; free physical = 647 ; free virtual = 9271
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -649,7 +649,7 @@ WARNING: [Synth 8-3295] tying undriven pin output_queues_cpu_regs_inst:cpu_reset
 WARNING: [Synth 8-3295] tying undriven pin nf_10g_interface_shared_cpu_regs_inst:cpu_resetn_soft to constant 0 [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/nf_10g_interface_shared_ip/hdl/nf_10g_interface_shared.v:263]
 WARNING: [Synth 8-3295] tying undriven pin nf_10g_interface_cpu_regs_inst:cpu_resetn_soft to constant 0 [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/nf_10g_interface_ip/hdl/nf_10g_interface.v:261]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:31 ; elapsed = 00:05:38 . Memory (MB): peak = 1674.176 ; gain = 745.734 ; free physical = 475 ; free virtual = 8204
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:34 ; elapsed = 00:05:43 . Memory (MB): peak = 1674.180 ; gain = 745.734 ; free physical = 642 ; free virtual = 9272
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'control_sub_auto_cc_0' instantiated as 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/auto_cc' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:8018]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'control_sub_axi_clock_converter_0_0' instantiated as 'control_sub_i/dma_sub/axi_clock_converter_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/hdl/control_sub.v:3986]
@@ -692,74 +692,74 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp/control_sub_xbar_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/xbar'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp/control_sub_xbar_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/xbar'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_2/control_sub_pcie_reset_inv_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie_reset_inv'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_2/control_sub_pcie_reset_inv_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie_reset_inv'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_3/control_sub_axis_dwidth_dma_tx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_tx'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_3/control_sub_axis_dwidth_dma_tx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_tx'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_4/control_sub_axis_dwidth_dma_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_rx'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_4/control_sub_axis_dwidth_dma_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_rx'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_5/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_rx'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_5/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_rx'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_6/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_tx'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_6/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_tx'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_7/control_sub_nf_riffa_dma_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/nf_riffa_dma_1'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_7/control_sub_nf_riffa_dma_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/nf_riffa_dma_1'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_8/control_sub_axi_clock_converter_0_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_clock_converter_0'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_8/control_sub_axi_clock_converter_0_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_clock_converter_0'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_9/control_sub_pcie3_7x_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie3_7x_1'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_9/control_sub_pcie3_7x_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie3_7x_1'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_10/control_sub_axi_iic_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_iic_0'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_10/control_sub_axi_iic_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_iic_0'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_11/control_sub_axi_uartlite_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_uartlite_0'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_11/control_sub_axi_uartlite_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_uartlite_0'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_12/control_sub_clk_wiz_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/clk_wiz_1'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_12/control_sub_clk_wiz_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/clk_wiz_1'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_13/control_sub_mdm_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/mdm_1'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_13/control_sub_mdm_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/mdm_1'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_14/control_sub_microblaze_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_14/control_sub_microblaze_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_15/control_sub_microblaze_0_axi_intc_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_intc'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_15/control_sub_microblaze_0_axi_intc_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_intc'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_16/control_sub_xbar_1_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_16/control_sub_xbar_1_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_periph/xbar'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_17/control_sub_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_17/control_sub_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_18/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_18/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_19/control_sub_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_19/control_sub_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_20/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_20/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_21/control_sub_lmb_bram_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_21/control_sub_lmb_bram_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_22/control_sub_microblaze_0_xlconcat_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_xlconcat'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_22/control_sub_microblaze_0_xlconcat_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_xlconcat'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_23/control_sub_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_23/control_sub_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/rst_clk_wiz_1_100M'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_24/control_sub_s00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/s00_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_24/control_sub_s00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/s00_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_25/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m00_couplers/m00_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_25/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m00_couplers/m00_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_26/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m01_couplers/m01_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_26/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m01_couplers/m01_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_27/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m02_couplers/m02_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_27/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m02_couplers/m02_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_28/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m03_couplers/m03_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_28/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m03_couplers/m03_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_29/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m04_couplers/m04_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_29/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m04_couplers/m04_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_30/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m05_couplers/m05_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_30/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m05_couplers/m05_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_31/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m06_couplers/m06_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_31/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m06_couplers/m06_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_32/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m07_couplers/m07_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_32/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m07_couplers/m07_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_33/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m08_couplers/m08_data_fifo'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_33/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m08_couplers/m08_data_fifo'
-Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_34/control_sub_auto_cc_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/auto_cc'
-Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-14558-sume/dcp_34/control_sub_auto_cc_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/auto_cc'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp/control_sub_xbar_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/xbar'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp/control_sub_xbar_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/xbar'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_2/control_sub_pcie_reset_inv_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie_reset_inv'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_2/control_sub_pcie_reset_inv_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie_reset_inv'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_3/control_sub_axis_dwidth_dma_tx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_tx'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_3/control_sub_axis_dwidth_dma_tx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_tx'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_4/control_sub_axis_dwidth_dma_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_rx'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_4/control_sub_axis_dwidth_dma_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_dwidth_dma_rx'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_5/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_rx'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_5/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_rx'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_6/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_tx'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_6/control_sub_axis_fifo_10g_rx_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axis_fifo_10g_tx'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_7/control_sub_nf_riffa_dma_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/nf_riffa_dma_1'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_7/control_sub_nf_riffa_dma_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/nf_riffa_dma_1'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_8/control_sub_axi_clock_converter_0_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_clock_converter_0'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_8/control_sub_axi_clock_converter_0_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_clock_converter_0'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_9/control_sub_pcie3_7x_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie3_7x_1'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_9/control_sub_pcie3_7x_1_0_in_context.xdc] for cell 'control_sub_i/dma_sub/pcie3_7x_1'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_10/control_sub_axi_iic_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_iic_0'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_10/control_sub_axi_iic_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_iic_0'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_11/control_sub_axi_uartlite_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_uartlite_0'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_11/control_sub_axi_uartlite_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/axi_uartlite_0'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_12/control_sub_clk_wiz_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/clk_wiz_1'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_12/control_sub_clk_wiz_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/clk_wiz_1'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_13/control_sub_mdm_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/mdm_1'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_13/control_sub_mdm_1_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/mdm_1'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_14/control_sub_microblaze_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_14/control_sub_microblaze_0_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_15/control_sub_microblaze_0_axi_intc_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_intc'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_15/control_sub_microblaze_0_axi_intc_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_intc'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_16/control_sub_xbar_1_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_16/control_sub_xbar_1_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_17/control_sub_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_17/control_sub_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_18/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_18/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_19/control_sub_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_19/control_sub_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_20/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_20/control_sub_ilmb_v10_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_21/control_sub_lmb_bram_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_21/control_sub_lmb_bram_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_22/control_sub_microblaze_0_xlconcat_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_xlconcat'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_22/control_sub_microblaze_0_xlconcat_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/microblaze_0_xlconcat'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_23/control_sub_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_23/control_sub_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'control_sub_i/nf_mbsys/mbsys/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_24/control_sub_s00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_24/control_sub_s00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_25/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_25/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m00_couplers/m00_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_26/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m01_couplers/m01_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_26/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m01_couplers/m01_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_27/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m02_couplers/m02_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_27/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m02_couplers/m02_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_28/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m03_couplers/m03_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_28/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m03_couplers/m03_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_29/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m04_couplers/m04_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_29/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m04_couplers/m04_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_30/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m05_couplers/m05_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_30/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m05_couplers/m05_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_31/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m06_couplers/m06_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_31/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m06_couplers/m06_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_32/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m07_couplers/m07_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_32/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m07_couplers/m07_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_33/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m08_couplers/m08_data_fifo'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_33/control_sub_m00_data_fifo_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/m08_couplers/m08_data_fifo'
+Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_34/control_sub_auto_cc_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/auto_cc'
+Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/.Xil/Vivado-23399-sume/dcp_34/control_sub_auto_cc_0_in_context.xdc] for cell 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/auto_cc'
 Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_0/synth/bd_7ad4_xmac_0.xdc] for cell 'nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst'
 Finished Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_0/synth/bd_7ad4_xmac_0.xdc] for cell 'nf_10g_interface_1/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst'
 Parsing XDC File [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/axi_10g_ethernet_nonshared/bd_0/ip/ip_0/synth/bd_7ad4_xmac_0.xdc] for cell 'nf_10g_interface_2/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xmac/inst'
@@ -928,7 +928,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB36 => RAMB36E1: 10 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2147.898 ; gain = 0.004 ; free physical = 185 ; free virtual = 7814
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2147.113 ; gain = 0.004 ; free physical = 222 ; free virtual = 8859
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'control_sub_i/dma_sub/axi_clock_converter_0' at clock pin 's_axi_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'control_sub_i/dma_sub/axis_dwidth_dma_rx' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'control_sub_i/dma_sub/axis_dwidth_dma_tx' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
@@ -948,14 +948,14 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'control_sub_i/dma_sub/axi_interconnect_0/s00_couplers/s00_data_fifo' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'control_sub_i/nf_mbsys/mbsys/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:05:07 ; elapsed = 00:07:57 . Memory (MB): peak = 2147.898 ; gain = 1219.457 ; free physical = 177 ; free virtual = 7811
+Finished Constraint Validation : Time (s): cpu = 00:05:15 ; elapsed = 00:08:07 . Memory (MB): peak = 2147.113 ; gain = 1218.668 ; free physical = 224 ; free virtual = 8857
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1761-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:05:07 ; elapsed = 00:07:57 . Memory (MB): peak = 2147.898 ; gain = 1219.457 ; free physical = 177 ; free virtual = 7811
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:15 ; elapsed = 00:08:07 . Memory (MB): peak = 2147.113 ; gain = 1218.668 ; free physical = 224 ; free virtual = 8857
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1074,7 +1074,7 @@ Applied set_property DONT_TOUCH = true for nf_datapath_0/input_arbiter_v1_0. (co
 Applied set_property DONT_TOUCH = true for nf_datapath_0/output_port_lookup_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for proc_sys_reset_i. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:59 ; elapsed = 00:08:49 . Memory (MB): peak = 2147.898 ; gain = 1219.457 ; free physical = 177 ; free virtual = 7813
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:06:06 ; elapsed = 00:08:58 . Memory (MB): peak = 2147.113 ; gain = 1218.668 ; free physical = 226 ; free virtual = 8859
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/proc_sys_reset_ip/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/ip/output_port_lookup_ip/hdl/small_fifo.v:97]
@@ -1365,7 +1365,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx_queue'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:20 ; elapsed = 00:09:10 . Memory (MB): peak = 2147.898 ; gain = 1219.457 ; free physical = 163 ; free virtual = 7804
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:27 ; elapsed = 00:09:19 . Memory (MB): peak = 2147.113 ; gain = 1218.668 ; free physical = 216 ; free virtual = 8855
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1910,7 +1910,7 @@ INFO: [Synth 8-5546] ROM "frame_max" won't be mapped to RAM because it is too sp
 INFO: [Synth 8-5545] ROM "broadcast_detect" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:35 ; elapsed = 00:16:06 . Memory (MB): peak = 2155.824 ; gain = 1227.383 ; free physical = 117 ; free virtual = 4992
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:31 ; elapsed = 00:15:41 . Memory (MB): peak = 2155.039 ; gain = 1226.594 ; free physical = 123 ; free virtual = 5993
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1967,10 +1967,10 @@ WARNING: [Synth 8-565] redefining clock 'nf_10g_interface_3/inst/nf_10g_interfac
 WARNING: [Synth 8-565] redefining clock 'nf_10g_interface_3/inst/nf_10g_interface_block_i/axi_10g_ethernet_i/inst/xpcs/inst/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_gth_10gbaser_i/gthe2_i/TXOUTCLK'
 INFO: [Synth 8-5819] Moved 9 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:11 ; elapsed = 00:17:28 . Memory (MB): peak = 2457.906 ; gain = 1529.465 ; free physical = 101 ; free virtual = 4688
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:08 ; elapsed = 00:17:45 . Memory (MB): peak = 2458.121 ; gain = 1529.676 ; free physical = 101 ; free virtual = 5670
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:38 ; elapsed = 00:17:58 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 116 ; free virtual = 4663
+Finished Timing Optimization : Time (s): cpu = 00:08:34 ; elapsed = 00:18:15 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 102 ; free virtual = 5642
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2090,7 +2090,7 @@ INFO: [Synth 8-4480] The timing for the instance nf_10g_interface_3/inst/nf_10g_
 INFO: [Synth 8-4480] The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance nf_10g_interface_3/inst/nf_10g_interface_block_i/xge_attachment/converter_tx/input_fifo/fifo/queue_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:23 ; elapsed = 00:18:56 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 139 ; free virtual = 4670
+Finished Technology Mapping : Time (s): cpu = 00:09:18 ; elapsed = 00:19:05 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 144 ; free virtual = 5705
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2122,7 +2122,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 50 on net \ten_gig_eth_pc
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:09:29 ; elapsed = 00:19:03 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 122 ; free virtual = 4667
+Finished IO Insertion : Time (s): cpu = 00:09:24 ; elapsed = 00:19:13 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 116 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2135,7 +2135,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:09:29 ; elapsed = 00:19:04 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 122 ; free virtual = 4667
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:25 ; elapsed = 00:19:13 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 116 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2147,25 +2147,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:45 ; elapsed = 00:19:20 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 124 ; free virtual = 4670
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:40 ; elapsed = 00:19:29 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 114 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:09:45 ; elapsed = 00:19:20 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 124 ; free virtual = 4670
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:40 ; elapsed = 00:19:29 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 114 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:09:48 ; elapsed = 00:19:23 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 124 ; free virtual = 4670
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:43 ; elapsed = 00:19:32 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 114 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:09:48 ; elapsed = 00:19:24 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 124 ; free virtual = 4670
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:43 ; elapsed = 00:19:33 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 114 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2294,11 +2294,11 @@ Report Cell Usage:
 |77    |OBUF                                |    33|
 +------+------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:48 ; elapsed = 00:19:24 . Memory (MB): peak = 2473.914 ; gain = 1545.473 ; free physical = 123 ; free virtual = 4670
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:43 ; elapsed = 00:19:33 . Memory (MB): peak = 2474.129 ; gain = 1545.684 ; free physical = 114 ; free virtual = 5689
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 977 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:07:54 ; elapsed = 00:19:21 . Memory (MB): peak = 2477.820 ; gain = 830.801 ; free physical = 574 ; free virtual = 5262
-Synthesis Optimization Complete : Time (s): cpu = 00:09:49 ; elapsed = 00:24:11 . Memory (MB): peak = 2477.820 ; gain = 1549.379 ; free physical = 564 ; free virtual = 5263
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:42 ; elapsed = 00:19:36 . Memory (MB): peak = 2478.035 ; gain = 831.801 ; free physical = 584 ; free virtual = 6353
+Synthesis Optimization Complete : Time (s): cpu = 00:09:44 ; elapsed = 00:24:35 . Memory (MB): peak = 2478.035 ; gain = 1549.590 ; free physical = 578 ; free virtual = 6354
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1596 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
@@ -2323,8 +2323,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1232 Infos, 328 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:10:12 ; elapsed = 00:25:49 . Memory (MB): peak = 2477.820 ; gain = 1314.523 ; free physical = 1739 ; free virtual = 7413
+synth_design: Time (s): cpu = 00:10:05 ; elapsed = 00:25:40 . Memory (MB): peak = 2478.035 ; gain = 1314.734 ; free physical = 1812 ; free virtual = 8490
 INFO: [Common 17-1381] The checkpoint '/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/synth/top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 2479.926 ; gain = 2.105 ; free physical = 1725 ; free virtual = 7412
-report_utilization: Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:03 . Memory (MB): peak = 2479.926 ; gain = 0.000 ; free physical = 1703 ; free virtual = 7411
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 27 14:27:46 2018...
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 2480.141 ; gain = 2.105 ; free physical = 1793 ; free virtual = 8490
+report_utilization: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:03 . Memory (MB): peak = 2480.141 ; gain = 0.000 ; free physical = 1777 ; free virtual = 8490
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 28 22:53:54 2018...

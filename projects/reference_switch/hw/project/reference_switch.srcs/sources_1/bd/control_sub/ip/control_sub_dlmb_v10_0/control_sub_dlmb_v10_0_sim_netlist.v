@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-// Date        : Fri Jul 27 13:36:08 2018
+// Date        : Sat Jul 28 22:02:26 2018
 // Host        : sume running 64-bit Ubuntu 14.04.5 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top control_sub_dlmb_v10_0 -prefix
 //               control_sub_dlmb_v10_0_ control_sub_ilmb_v10_0_sim_netlist.v

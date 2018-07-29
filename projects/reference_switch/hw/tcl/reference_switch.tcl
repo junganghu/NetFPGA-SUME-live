@@ -31,7 +31,6 @@
 # Vivado Launch Script
 #### Change design settings here #######
 set design $::env(NF_PROJECT_NAME) 
-puts $design
 set top top
 set device xc7vx690t-3-ffg1761
 set proj_dir ./project

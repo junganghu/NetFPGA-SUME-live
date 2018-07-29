@@ -39,7 +39,7 @@
 PROJ = ${NF_PROJECT_NAME}
 
 all:
-	@echo "Project Name : ${NF_PROJECT_NAME}"
+	@echo "Project Name: ${PROJ}"
 	@echo ""
 	@echo "NetFPGA-SUME Referece Project HW Makefile"
 	@echo ""
@@ -61,7 +61,7 @@ project: identifier
 	@if test -d project/; then \
 		echo "Project already exists"; \
 	else \
-		${vivado} -mode batch -source tcl/reference_switch.tcl; \
+		vivado -mode batch -source tcl/${PROJ}.tcl; \
 		if [ -f patch/${PROJ}.patch ]; then \
 			patch -p1 < patch/${PROJ}.patch; \
 		fi; \
@@ -72,7 +72,7 @@ projectgui:
 	@if test -d project/; then \
 		echo "Project already exists"; \
 	else \
-		${vivado} -mode gui -source tcl/${PROJ}.tcl; \
+		vivado -mode gui -source tcl/${PROJ}.tcl; \
 		if [ -f patch/${PROJ}.patch ]; then \
 			patch -p1 < patch/${PROJ}.patch; \
 		fi; \
@@ -81,7 +81,7 @@ projectgui:
 export_to_sdk: identifier
 	@if test -d project; then \
 		echo "export ${PROJ} project to SDK"; \
-		${vivado} -mode tcl -source tcl/export_hardware.tcl -tclargs ${PROJ}; \
+		vivado -mode tcl -source tcl/export_hardware.tcl -tclargs ${PROJ}; \
 	else \
 		echo "Project ${PROJ} does not exist."; \
 		echo "Please run \"make project\" to create and build the project first"; \
@@ -91,7 +91,7 @@ load_elf:
 	@if [ ! -d ../bitfiles ]; then mkdir ../bitfiles; fi;
 	@if test -d project; then \
 		echo "export ${PROJ} project to SDK"; \
-		${vivado} -mode tcl -source tcl/load_elf.tcl -tclargs ${PROJ}; \
+		vivado -mode tcl -source tcl/load_elf.tcl -tclargs ${PROJ}; \
 	else \
 		echo "Project ${PROJ} does not exist.";\
 		echo "Please run \"make project\" to create and build the project first"; \
@@ -120,13 +120,13 @@ identifier:
 
 sim:	simclean identifier
 	cp -f $(NF_DESIGN_DIR)/test/reg_defines_${NF_PROJECT_NAME}.py $(NF_DESIGN_DIR)/test/${TESTNAME}/reg_defines_${NF_PROJECT_NAME}.py
-	${vivado} -mode batch -source ../../../projects/${PROJ}/hw/tcl/${NF_PROJECT_NAME}_sim.tcl -tclargs ${TESTNAME}
+	vivado -mode batch -source ../../../projects/${PROJ}/hw/tcl/${NF_PROJECT_NAME}_sim.tcl -tclargs ${TESTNAME}
 	$(SUME_FOLDER)/tools/scripts/nf_sim_reconcile_axi_logs.py
 	$(SUME_FOLDER)/tools/scripts/nf_sim_registers_axi_logs.py
  
 reg: 	
-	${vivado} -mode batch -source $(NF_DESIGN_DIR)/hw/tcl/${NF_PROJECT_NAME}_defines.tcl
-	${vivado} -mode batch -source $(NF_DESIGN_DIR)/hw/tcl/export_registers.tcl	
+	vivado -mode batch -source $(NF_DESIGN_DIR)/hw/tcl/${NF_PROJECT_NAME}_defines.tcl
+	vivado -mode batch -source $(NF_DESIGN_DIR)/hw/tcl/export_registers.tcl	
 	cd ../sw/embedded/src  && cp ../../../../../tools/scripts/xparam2regdefines.py . && python xparam2regdefines.py
 	cd ../sw/embedded/src  && rm -f xparam2regdefines.py && mv reg_defines.h ../
 	cd ../sw/embedded && cp ../../../../tools/scripts/python_parser.py . && python python_parser.py
@@ -134,7 +134,7 @@ reg:
 	
 simgui: simclean identifier
 	cp -f $(NF_DESIGN_DIR)/test/reg_defines_reference_switch.py $(NF_DESIGN_DIR)/test/${TESTNAME}/reg_defines_reference_switch.py
-	${vivado} -mode gui -source ../../../projects/${PROJ}/hw/tcl/${NF_PROJECT_NAME}_sim.tcl -tclargs ${TESTNAME}
+	vivado -mode gui -source ../../../projects/${PROJ}/hw/tcl/${NF_PROJECT_NAME}_sim.tcl -tclargs ${TESTNAME}
 	$(SUME_FOLDER)/tools/scripts/nf_sim_reconcile_axi_logs.py
 	$(SUME_FOLDER)/tools/scripts/nf_sim_registers_axi_logs.py
 

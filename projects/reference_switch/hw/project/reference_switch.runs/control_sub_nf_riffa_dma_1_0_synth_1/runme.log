@@ -14,7 +14,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12323 
+INFO: Helper process launched with PID 21479 
 WARNING: [Synth 8-2507] parameter declaration becomes local in small_fifo with formal parameter declaration list [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/7838/hdl/small_fifo.v:67]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/riffa/functions.vh:58]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/riffa/functions.vh:74]
@@ -23,7 +23,7 @@ WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K m
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/riffa/tlp.vh:228]
 WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/riffa/tlp.vh:248]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:34 . Memory (MB): peak = 1170.637 ; gain = 242.191 ; free physical = 1126 ; free virtual = 8838
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:33 . Memory (MB): peak = 1170.637 ; gain = 242.191 ; free physical = 1338 ; free virtual = 9854
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'control_sub_nf_riffa_dma_1_0' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_nf_riffa_dma_1_0/synth/control_sub_nf_riffa_dma_1_0.v:56]
 INFO: [Synth 8-638] synthesizing module 'nf_riffa_dma' [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/sume/nf_riffa_dma.v:50]
@@ -1613,7 +1613,7 @@ WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_
 WARNING: [Synth 8-3331] design input_blk has unconnected port PROG_EMPTY_THRESH_ASSERT[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:01:43 . Memory (MB): peak = 1337.930 ; gain = 409.484 ; free physical = 953 ; free virtual = 8668
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:01:42 . Memory (MB): peak = 1337.930 ; gain = 409.484 ; free physical = 1168 ; free virtual = 9687
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1624,7 +1624,7 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin nf_riffa_dma_cpu_regs_inst:cpu_resetn_soft to constant 0 [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/sume/nf_riffa_dma.v:546]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:01:44 . Memory (MB): peak = 1337.930 ; gain = 409.484 ; free physical = 953 ; free virtual = 8668
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:01:43 . Memory (MB): peak = 1337.930 ; gain = 409.484 ; free physical = 1167 ; free virtual = 9686
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1707,16 +1707,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.54 . Memory (MB): peak = 1759.887 ; gain = 12.004 ; free physical = 579 ; free virtual = 8294
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.52 . Memory (MB): peak = 1759.887 ; gain = 12.004 ; free physical = 736 ; free virtual = 9271
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:02:58 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 577 ; free virtual = 8292
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:02:57 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 734 ; free virtual = 9269
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1761-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:02:58 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 577 ; free virtual = 8292
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:02:57 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 734 ; free virtual = 9269
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1732,7 +1732,7 @@ Applied set_property DONT_TOUCH = true for inst/riffa_axi_lite_attachment/tag_fi
 Applied set_property DONT_TOUCH = true for inst/riffa_axi_lite_attachment/w_fifo. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/riffa_axi_lite_attachment/w_fifo/U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:02:58 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 577 ; free virtual = 8292
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:02:58 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 734 ; free virtual = 9269
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/riffa/tx_data_fifo.v:155]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ipshared/3963/hdl/riffa/reorder_queue_input.v:213]
@@ -1822,7 +1822,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'riffa_axi_lite'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:03:05 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 573 ; free virtual = 8289
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:03:04 . Memory (MB): peak = 1759.887 ; gain = 831.441 ; free physical = 736 ; free virtual = 9271
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4371,7 +4371,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_2/\pcierq_reg_reg[8] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:04:07 . Memory (MB): peak = 1759.891 ; gain = 831.445 ; free physical = 538 ; free virtual = 8254
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:04:05 . Memory (MB): peak = 1759.891 ; gain = 831.445 ; free physical = 731 ; free virtual = 9267
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -4449,10 +4449,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:04:18 . Memory (MB): peak = 1807.883 ; gain = 879.438 ; free physical = 486 ; free virtual = 8203
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:13 ; elapsed = 00:04:15 . Memory (MB): peak = 1807.883 ; gain = 879.438 ; free physical = 684 ; free virtual = 9219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:18 ; elapsed = 00:04:21 . Memory (MB): peak = 1822.891 ; gain = 894.445 ; free physical = 471 ; free virtual = 8188
+Finished Timing Optimization : Time (s): cpu = 00:02:17 ; elapsed = 00:04:19 . Memory (MB): peak = 1822.891 ; gain = 894.445 ; free physical = 668 ; free virtual = 9204
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4519,7 +4519,7 @@ INFO: [Synth 8-4480] The timing for the instance inst/riffa_axis_attachment/axis
 INFO: [Synth 8-4480] The timing for the instance inst/riffa_axis_attachment/axis_to_riffa_conv/axis_riffa_fifo/fifo/queue_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance inst/riffa_axis_attachment/axis_to_riffa_conv/axis_riffa_fifo/fifo/queue_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:37 ; elapsed = 00:04:40 . Memory (MB): peak = 1885.766 ; gain = 957.320 ; free physical = 409 ; free virtual = 8125
+Finished Technology Mapping : Time (s): cpu = 00:02:35 ; elapsed = 00:04:38 . Memory (MB): peak = 1886.766 ; gain = 958.320 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4543,7 +4543,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:40 ; elapsed = 00:04:43 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 409 ; free virtual = 8125
+Finished IO Insertion : Time (s): cpu = 00:02:38 ; elapsed = 00:04:40 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -4556,7 +4556,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:40 ; elapsed = 00:04:43 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 409 ; free virtual = 8125
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:38 ; elapsed = 00:04:40 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4568,25 +4568,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:45 ; elapsed = 00:04:48 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 405 ; free virtual = 8122
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:43 ; elapsed = 00:04:45 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:45 ; elapsed = 00:04:48 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 405 ; free virtual = 8122
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:43 ; elapsed = 00:04:45 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:47 ; elapsed = 00:04:50 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 405 ; free virtual = 8122
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:45 ; elapsed = 00:04:47 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:47 ; elapsed = 00:04:50 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 405 ; free virtual = 8122
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:45 ; elapsed = 00:04:47 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -5084,11 +5084,11 @@ Report Instance Areas:
 |422   |      riffa_to_axis_conv                                                     |tx_riffa_axi                           |   594|
 +------+-----------------------------------------------------------------------------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:47 ; elapsed = 00:04:50 . Memory (MB): peak = 1885.770 ; gain = 957.324 ; free physical = 405 ; free virtual = 8122
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:45 ; elapsed = 00:04:47 . Memory (MB): peak = 1886.770 ; gain = 958.324 ; free physical = 604 ; free virtual = 9140
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 926 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:11 ; elapsed = 00:02:13 . Memory (MB): peak = 1885.770 ; gain = 377.395 ; free physical = 404 ; free virtual = 8122
-Synthesis Optimization Complete : Time (s): cpu = 00:02:47 ; elapsed = 00:04:50 . Memory (MB): peak = 1885.773 ; gain = 957.328 ; free physical = 406 ; free virtual = 8123
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 1886.770 ; gain = 378.395 ; free physical = 604 ; free virtual = 9140
+Synthesis Optimization Complete : Time (s): cpu = 00:02:45 ; elapsed = 00:04:48 . Memory (MB): peak = 1886.773 ; gain = 958.328 ; free physical = 606 ; free virtual = 9142
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 878 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -5108,7 +5108,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/zhs/NetFPGA-SUM
 WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports user_clk]'. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_nf_riffa_dma_1_0/ip_proj/nf_riffa_dma.srcs/sources_1/ip/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u_clocks.xdc:52]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
 INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_nf_riffa_dma_1_0/ip_proj/nf_riffa_dma.srcs/sources_1/ip/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u_clocks.xdc:52]
-get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2404.715 ; gain = 518.941 ; free physical = 105 ; free virtual = 7662
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2404.715 ; gain = 517.941 ; free physical = 154 ; free virtual = 8689
 WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports m_axi_lite_aclk]'. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_nf_riffa_dma_1_0/ip_proj/nf_riffa_dma.srcs/sources_1/ip/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u_clocks.xdc:53]
 Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
 INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.srcs/sources_1/bd/control_sub/ip/control_sub_nf_riffa_dma_1_0/ip_proj/nf_riffa_dma.srcs/sources_1/ip/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u/axis_fifo_2clk_32d_4u_clocks.xdc:53]
@@ -5210,11 +5210,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 900 Infos, 361 Warnings, 20 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:06 ; elapsed = 00:05:08 . Memory (MB): peak = 2404.715 ; gain = 1362.766 ; free physical = 102 ; free virtual = 7660
+synth_design: Time (s): cpu = 00:03:04 ; elapsed = 00:05:05 . Memory (MB): peak = 2404.715 ; gain = 1362.766 ; free physical = 152 ; free virtual = 8687
 INFO: [Common 17-1381] The checkpoint '/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_nf_riffa_dma_1_0_synth_1/control_sub_nf_riffa_dma_1_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2410.727 ; gain = 6.012 ; free physical = 171 ; free virtual = 7681
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2410.727 ; gain = 6.012 ; free physical = 147 ; free virtual = 8687
 INFO: [Coretcl 2-1174] Renamed 421 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/hw/project/reference_switch.runs/control_sub_nf_riffa_dma_1_0_synth_1/control_sub_nf_riffa_dma_1_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2410.727 ; gain = 0.000 ; free physical = 148 ; free virtual = 7680
-report_utilization: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2410.727 ; gain = 0.000 ; free physical = 147 ; free virtual = 7680
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 27 13:12:57 2018...
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2410.727 ; gain = 0.000 ; free physical = 209 ; free virtual = 8595
+report_utilization: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.63 . Memory (MB): peak = 2410.727 ; gain = 0.000 ; free physical = 209 ; free virtual = 8594
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 28 21:40:04 2018...

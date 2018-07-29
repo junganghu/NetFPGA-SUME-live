@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Fri Jul 27 13:07:11 2018
+-- Date        : Sat Jul 28 21:34:23 2018
 -- Host        : sume running 64-bit Ubuntu 14.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top control_sub_m07_data_fifo_0 -prefix
 --               control_sub_m07_data_fifo_0_ control_sub_m00_data_fifo_0_sim_netlist.vhdl

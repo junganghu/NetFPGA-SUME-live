@@ -1,21 +1,21 @@
-!SESSION 2018-07-27 16:07:51.740 -----------------------------------------------
+!SESSION 2018-07-29 11:22:13.354 -----------------------------------------------
 eclipse.buildId=2016.4
 java.version=1.8.0_66
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
-Framework arguments:  -application com.xilinx.sdk.cmdline.service 35942
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdk.cmdline.service 35942 -data /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch
+Framework arguments:  -application com.xilinx.sdk.cmdline.service 43896
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdk.cmdline.service 43896 -data /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:08:28.798
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:15.797
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:08:29.273
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.156
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-11
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:08:32.022
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.274
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:08:32.051
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.294
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, {"control_sub_i_dma_sub_axi_clock_converter_0": {"hier_name": "control_sub_i_dma_sub_axi_clock_converter_0",
 "type": "axi_clock_converter",
 "version": "2.1",
@@ -213,16 +213,16 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:08:32.379
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.529
 !MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:00.204
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.662
 !MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:00.213
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.667
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:00.226
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:16.679
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, {"control_sub_i_nf_mbsys_mbsys_microblaze_0": {"freertos823_xilinx_v1_3": {"name": "freertos823_xilinx",
 "version": "1.3",
 "desc": "FreeRTOS is a market leading open source RTOS",
@@ -247,58 +247,58 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:01.872
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.197
 !MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -sw bsp -dir /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -os standalone], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:01.920
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.208
 !MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -sw bsp -dir /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -os standalone], Result: [null, ]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:02.187
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.278
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:02.188
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.279
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:02.190
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.280
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:02.192
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.282
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:02.193
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.283
 !MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp], Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.686
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.576
 !MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp], Result: [null, ]. Thread: Thread-13
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.812
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.665
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.814
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.683
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.816
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.691
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.819
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.694
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.837
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.699
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.838
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.701
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.840
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.701
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.876
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.760
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
 "description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
 "supp_proc": "psu_cortexa53 psu_cortexr5",
@@ -475,631 +475,628 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.880
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.768
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.881
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.770
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.882
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.776
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.884
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.778
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.885
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.779
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.886
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.781
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.887
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.785
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.888
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.797
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.889
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.800
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynqmp_dram_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.899
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynqmp_dram_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on CortexA53 processors., Time=1532678944898, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.804
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynqmp_dram_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on CortexA53 processors., Time=1532834537803, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.900
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.805
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.902
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.808
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.902
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.808
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.904
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.812
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.905
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.816
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.906
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.818
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.906
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.821
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.907
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.827
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.908
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.828
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynqmp_fsbl -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.911
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynqmp_fsbl -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for CortexA53/CortexR5 processors., Time=1532678944910, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.831
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynqmp_fsbl -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for CortexA53/CortexR5 processors., Time=1532834537831, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.912
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.838
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.913
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.839
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.914
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.841
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.916
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.844
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.917
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.849
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.919
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.857
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.920
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.858
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.924
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.859
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.924
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.869
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app empty_application -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.928
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.877
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app empty_application -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [null, 1]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.930
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.878
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.936
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.880
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.937
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.886
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.944
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.888
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.952
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.888
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.954
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.889
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.958
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.893
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.960
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.895
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.960
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.897
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynq_dram_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.964
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynq_dram_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on CortexA9 processors., Time=1532678944962, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.900
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynq_dram_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on CortexA9 processors., Time=1532834537900, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.965
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.906
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.967
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.907
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.972
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.911
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.975
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.919
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.976
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.920
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.977
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.921
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.980
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.929
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.982
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.931
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.983
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.937
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app openamp_echo_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.986
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app openamp_echo_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for Cortex-R5 and Cortex-A9 processors., Time=1532678944986, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.940
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app openamp_echo_test -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for Cortex-R5 and Cortex-A9 processors., Time=1532834537940, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.988
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.941
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.992
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.943
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:04.993
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.946
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.009
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.948
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.012
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.949
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.014
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.950
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.016
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.950
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.019
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.951
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.020
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.952
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynq_fsbl -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.023
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynq_fsbl -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for CortexA9 processors., Time=1532678945023, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.954
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app zynq_fsbl -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for CortexA9 processors., Time=1532834537954, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.025
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.955
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.028
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.957
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.029
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.957
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.031
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.959
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.032
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.960
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.041
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.961
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.048
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.965
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.051
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.967
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.054
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.967
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app xilkernel_thread_demo -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.061
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app xilkernel_thread_demo -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on Xilkernel based Board Support Packages., Time=1532678945060, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.971
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app xilkernel_thread_demo -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on Xilkernel based Board Support Packages., Time=1532834537971, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.062
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.972
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.064
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.974
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.084
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.981
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.087
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.984
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.087
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.984
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.089
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.985
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.089
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.986
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.090
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.987
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.091
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.990
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app srec_spi_bootloader -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.097
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app srec_spi_bootloader -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application requires a AXI Quad SPI in the hardware., Time=1532678945096, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.994
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app srec_spi_bootloader -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application requires a AXI Quad SPI in the hardware., Time=1532834537993, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.097
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.995
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.100
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:17.996
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.100
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.001
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.105
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.004
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.106
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.005
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.116
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.007
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.117
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.009
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.118
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.011
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.119
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.015
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app peripheral_tests -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.122
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.018
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app peripheral_tests -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [null, 1]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.133
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.019
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.136
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.020
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.136
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.022
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.139
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.024
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.140
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.026
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.142
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.027
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.145
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.028
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.147
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.029
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.161
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.032
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app freertos_hello_world -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.164
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app freertos_hello_world -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on the freertos823_xilinx., Time=1532678945163, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.035
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app freertos_hello_world -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only on the freertos823_xilinx., Time=1532834538035, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.167
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.046
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.168
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.048
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.172
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.049
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.175
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.052
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.175
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.052
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.176
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.053
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.177
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.061
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.178
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.063
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.179
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.063
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app srec_bootloader -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.182
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.067
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app srec_bootloader -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.183
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.068
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.184
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.069
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.188
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.075
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.190
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.077
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.196
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.078
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.198
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.079
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.198
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.079
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.199
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.081
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.205
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.082
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app mba_fs_boot -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.208
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.085
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app mba_fs_boot -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [null, 1]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.209
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.086
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.210
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.087
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.212
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.088
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.214
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.090
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.219
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.090
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.220
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.091
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.222
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.092
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.224
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.093
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.225
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.094
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app openamp_matrix_multiply -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.228
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app openamp_matrix_multiply -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for Cortex-R5 and Cortex-A9 processors., Time=1532678945228, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.096
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app openamp_matrix_multiply -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application is supported only for Cortex-R5 and Cortex-A9 processors., Time=1532834538096, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.233
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.098
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.235
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.099
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.240
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.105
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.242
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.108
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.244
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.110
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.246
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.111
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.247
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.117
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.248
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.119
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.252
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.133
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app lwip_echo_server -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.257
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app lwip_echo_server -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application requires an Ethernet MAC IP instance in the hardware., Time=1532678945257, Code=1}, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.138
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app lwip_echo_server -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [{Format=This application requires an Ethernet MAC IP instance in the hardware., Time=1532834538137, Code=1}, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.261
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.139
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.262
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.142
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.264
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.149
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.266
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.151
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.280
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.152
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.282
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.153
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.284
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.157
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.285
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.159
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.287
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.165
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app hello_world -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.292
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.169
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -os standalone -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -app hello_world -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -arch {}], Result: [null, 1]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.299
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.178
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.303
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.183
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.308
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.184
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:05.310
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:18.186
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.302
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.536
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_REORDER_INSTR], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.304
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.547
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.311
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.557
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_ENDIANNESS], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.313
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.559
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.314
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.569
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_BARREL], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.316
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.571
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.317
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.571
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_PCMP_INSTR], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.318
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.573
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.319
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.582
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_DIV], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.321
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.583
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.325
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.598
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_FPU], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.326
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.600
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.329
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.601
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_HW_MUL], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.331
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.602
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.337
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.610
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_AREA_OPTIMIZED], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.339
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.611
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf control_sub_i_nf_mbsys_mbsys_microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.357
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.617
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.359
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.618
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.362
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.621
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.363
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.623
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {}]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.371
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.628
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.372
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.630
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.376
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.633
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.378
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.635
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {}]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.381
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.636
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.382
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.637
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.514
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.694
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.516
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.696
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss ], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.534
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.697
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.537
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.699
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, {"procname": "control_sub_i_nf_mbsys_mbsys_microblaze_0",
 "osname": "standalone",
 "osver": "6.1",
 }]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.537
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.699
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.538
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.700
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.543
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.701
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.544
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.702
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss], Result: [null, ]. Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.546
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.702
 !MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -app hello_world -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -os standalone -dir /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/app/src], Thread: Thread-21
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-07-27 16:09:07.679
+!ENTRY com.xilinx.sdk.utils 0 0 2018-07-29 11:22:19.838
 !MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/hw_platform/system.hdf -sw /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/bsp/system.mss -app hello_world -processor control_sub_i_nf_mbsys_mbsys_microblaze_0 -os standalone -dir /home/zhs/NetFPGA-SUME-live-master/projects/reference_switch/sw/embedded/SDK_Workspace/reference_switch/app/src], Result: [null, ]. Thread: Thread-21
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-27 16:09:07.794
-!MESSAGE Indexed 'bsp' (57 sources, 46 headers) in 2.56 sec: 1,750 declarations; 11,091 references; 25 unresolved inclusions; 3 syntax errors; 24 unresolved names (0.19%)
-
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.035
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.283
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1135,7 +1132,7 @@ java.lang.NullPointerException
 	at com.xilinx.sdk.cmdline.service.SdkTcfCmdServer$1.run(SdkTcfCmdServer.java:73)
 	at java.lang.Thread.run(Thread.java:745)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.121
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.308
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1146,7 +1143,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.122
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.327
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1157,7 +1154,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.135
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.330
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1168,7 +1165,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.137
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.356
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1179,7 +1176,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.152
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.406
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1190,7 +1187,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.158
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.408
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1201,7 +1198,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.162
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.413
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1212,7 +1209,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.164
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.425
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1223,7 +1220,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.167
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.428
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1234,7 +1231,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.168
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.433
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1245,7 +1242,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.171
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.461
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1256,7 +1253,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.174
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.465
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1267,7 +1264,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.176
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.481
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1278,7 +1275,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.177
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.482
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1289,7 +1286,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.180
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.500
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1300,7 +1297,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.182
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.522
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1311,7 +1308,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.184
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.526
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1322,7 +1319,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.185
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.543
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1333,7 +1330,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.189
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.553
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1344,7 +1341,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.197
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.562
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1355,7 +1352,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.201
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.573
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1366,7 +1363,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.208
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.575
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1377,7 +1374,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.210
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.579
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1388,7 +1385,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.211
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.580
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1399,7 +1396,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.214
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.587
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1410,7 +1407,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.222
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.590
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1421,7 +1418,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.229
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.597
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1432,7 +1429,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.232
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.599
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1443,7 +1440,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.239
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.606
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1454,7 +1451,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.244
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.608
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1465,7 +1462,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:08.245
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:20.608
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1476,10 +1473,10 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-27 16:09:08.886
-!MESSAGE Indexed 'app' (2 sources, 37 headers) in 0.759 sec: 1,326 declarations; 1,896 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2018-07-29 11:22:20.855
+!MESSAGE Indexed 'bsp' (57 sources, 46 headers) in 2.96 sec: 1,750 declarations; 11,091 references; 25 unresolved inclusions; 3 syntax errors; 24 unresolved names (0.19%)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.048
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.096
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1490,7 +1487,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.053
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.109
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1501,7 +1498,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.055
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.139
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1512,7 +1509,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.057
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.141
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1523,7 +1520,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.064
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.148
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1534,7 +1531,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.071
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.151
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1545,7 +1542,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.078
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.176
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1556,7 +1553,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.091
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.195
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1567,7 +1564,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.113
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.289
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1578,7 +1575,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.118
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.293
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1589,7 +1586,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.120
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.295
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1600,7 +1597,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.123
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.297
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1611,7 +1608,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.127
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.302
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1622,7 +1619,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.132
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.307
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1633,7 +1630,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.133
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:21.309
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1644,7 +1641,10 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.925
+!ENTRY org.eclipse.cdt.core 1 0 2018-07-29 11:22:21.325
+!MESSAGE Indexed 'app' (2 sources, 37 headers) in 0.413 sec: 1,326 declarations; 1,896 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.121
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1655,7 +1655,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.929
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.125
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1666,7 +1666,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.932
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.126
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1677,7 +1677,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.933
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.127
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1688,7 +1688,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.937
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.129
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1699,7 +1699,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.945
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.135
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1710,7 +1710,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:09.945
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.139
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1721,7 +1721,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.281
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.481
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1732,7 +1732,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.283
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.484
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1743,7 +1743,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.285
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.486
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1754,7 +1754,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.286
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.487
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1765,7 +1765,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.289
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.504
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1776,7 +1776,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.291
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.506
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1787,7 +1787,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:10.293
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:22.506
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1798,7 +1798,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.191
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.355
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1809,7 +1809,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.192
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.356
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1820,7 +1820,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.195
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.358
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1831,7 +1831,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.199
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.362
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1842,7 +1842,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.202
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.363
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1853,7 +1853,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.472
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.638
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1864,7 +1864,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.473
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.644
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1875,7 +1875,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.475
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.646
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1886,7 +1886,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.492
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.647
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1897,7 +1897,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.493
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.648
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1908,7 +1908,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:09:11.520
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:23.659
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1942,9 +1942,9 @@ java.lang.NullPointerException
 	at com.xilinx.sdk.cmdline.service.SdkTcfCmdServer$1.run(SdkTcfCmdServer.java:73)
 	at java.lang.Thread.run(Thread.java:745)
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-27 16:09:12.602
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-29 11:22:24.625
 !MESSAGE The workspace will exit with unsaved changes in this session.
-!SESSION 2018-07-27 16:10:23.245 -----------------------------------------------
+!SESSION 2018-07-29 11:22:33.410 -----------------------------------------------
 eclipse.buildId=2016.4
 java.version=1.8.0_66
 java.vendor=Oracle Corporation
@@ -1952,10 +1952,10 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
 Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all -data ./SDK_Workspace/reference_switch
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-27 16:10:24.752
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-29 11:22:34.823
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.442
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.520
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1995,7 +1995,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.453
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.533
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2006,7 +2006,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.462
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.541
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2017,7 +2017,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.471
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.548
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2028,7 +2028,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.479
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.558
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2039,7 +2039,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.490
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.569
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2050,7 +2050,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.494
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.572
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2061,7 +2061,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.504
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.579
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2072,7 +2072,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.513
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.586
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2083,7 +2083,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.523
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.597
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2094,7 +2094,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.527
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.601
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2105,7 +2105,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.535
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.608
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2116,7 +2116,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.541
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.614
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2127,7 +2127,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.551
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.623
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2138,7 +2138,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.554
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.627
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2149,7 +2149,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.561
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.635
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2160,7 +2160,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.567
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.642
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2171,7 +2171,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.575
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.649
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2182,7 +2182,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.581
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.654
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2193,7 +2193,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.590
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.663
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2204,7 +2204,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.598
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.672
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2215,7 +2215,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.612
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.684
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2226,7 +2226,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.625
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.693
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2237,7 +2237,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.630
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.701
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2248,7 +2248,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.632
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.703
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2259,7 +2259,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.642
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.709
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2270,7 +2270,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.649
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.716
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2281,7 +2281,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.657
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.728
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2292,7 +2292,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.659
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.731
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2303,7 +2303,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.665
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.737
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2314,7 +2314,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.676
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.743
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2325,7 +2325,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:26.679
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:36.745
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2336,7 +2336,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.007
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.068
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2347,7 +2347,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.010
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.074
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2358,7 +2358,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.012
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.082
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2369,7 +2369,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.015
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.085
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2380,7 +2380,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.019
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.096
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2391,7 +2391,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.025
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.103
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2402,7 +2402,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.029
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.107
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2413,7 +2413,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.090
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.177
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2424,7 +2424,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.096
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.185
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2435,7 +2435,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.099
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.193
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2446,7 +2446,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.100
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.195
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2457,7 +2457,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.109
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.201
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2468,7 +2468,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.116
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.210
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2479,7 +2479,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.120
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:37.213
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2490,7 +2490,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.893
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.040
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2501,7 +2501,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.895
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.043
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2512,7 +2512,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.897
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.045
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2523,7 +2523,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.898
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.047
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2534,7 +2534,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.900
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.050
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2545,7 +2545,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.902
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.055
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2556,7 +2556,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:27.903
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.063
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2567,7 +2567,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.239
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.441
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2578,7 +2578,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.241
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.442
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2589,7 +2589,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.242
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.445
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2600,7 +2600,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.243
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.446
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2611,7 +2611,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.245
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.449
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2622,7 +2622,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.247
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.458
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2633,7 +2633,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:28.248
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:38.459
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2644,7 +2644,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.138
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.316
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2655,7 +2655,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.139
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.318
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2666,7 +2666,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.142
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.322
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2677,7 +2677,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.145
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.324
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2688,7 +2688,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.146
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.325
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2699,7 +2699,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.421
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.596
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2710,7 +2710,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.424
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.600
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2721,7 +2721,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.425
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.601
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2732,7 +2732,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.426
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.602
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2743,7 +2743,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.428
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.603
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2754,7 +2754,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:29.456
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:39.632
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2792,9 +2792,9 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-27 16:10:32.391
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-29 11:22:42.573
 !MESSAGE The workspace will exit with unsaved changes in this session.
-!SESSION 2018-07-27 16:10:32.868 -----------------------------------------------
+!SESSION 2018-07-29 11:22:43.043 -----------------------------------------------
 eclipse.buildId=2016.4
 java.version=1.8.0_66
 java.vendor=Oracle Corporation
@@ -2802,10 +2802,10 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
 Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build all -data ./SDK_Workspace/reference_switch
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-27 16:10:34.305
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-29 11:22:44.495
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.329
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.538
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2845,7 +2845,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.348
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.558
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2856,7 +2856,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.360
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.562
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2867,7 +2867,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.387
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.574
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2878,7 +2878,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.393
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.582
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2889,7 +2889,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.399
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.588
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2900,7 +2900,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.401
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.590
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2911,7 +2911,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.410
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.602
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2922,7 +2922,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.416
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.611
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2933,7 +2933,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.419
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.616
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2944,7 +2944,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.421
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.617
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2955,7 +2955,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.424
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.624
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2966,7 +2966,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.426
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.632
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2977,7 +2977,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.430
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.639
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2988,7 +2988,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.430
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.641
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2999,7 +2999,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.433
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.648
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3010,7 +3010,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.436
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.653
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3021,7 +3021,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.441
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.664
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3032,7 +3032,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.443
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.669
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3043,7 +3043,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.447
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.679
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3054,7 +3054,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.451
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.685
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3065,7 +3065,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.454
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.698
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3076,7 +3076,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.457
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.704
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3087,7 +3087,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.460
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.710
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3098,7 +3098,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.462
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.711
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3109,7 +3109,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.465
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.718
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3120,7 +3120,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.471
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.724
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3131,7 +3131,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.474
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.731
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3142,7 +3142,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.484
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.734
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3153,7 +3153,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.486
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.740
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3164,7 +3164,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.492
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.745
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3175,7 +3175,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.493
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:45.746
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3186,7 +3186,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.757
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.051
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3197,7 +3197,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.768
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.055
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3208,7 +3208,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.770
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.058
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3219,7 +3219,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.771
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.059
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3230,7 +3230,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.773
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.065
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3241,7 +3241,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.775
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.070
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3252,7 +3252,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.775
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.072
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3263,7 +3263,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.829
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.134
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3274,7 +3274,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.831
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.137
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3285,7 +3285,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.833
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.139
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3296,7 +3296,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.834
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.140
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3307,7 +3307,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.836
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.142
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3318,7 +3318,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.838
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.143
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3329,7 +3329,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:35.839
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.144
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3340,7 +3340,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.615
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.932
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3351,7 +3351,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.617
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.933
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3362,7 +3362,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.620
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.935
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3373,7 +3373,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.621
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.936
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3384,7 +3384,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.623
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.937
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3395,7 +3395,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.631
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.939
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3406,7 +3406,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.634
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:46.941
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3417,7 +3417,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.962
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.280
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3428,7 +3428,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.964
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.282
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3439,7 +3439,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.966
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.284
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3450,7 +3450,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.967
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.284
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3461,7 +3461,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.969
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.286
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3472,7 +3472,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.981
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.289
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3483,7 +3483,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:36.982
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:47.290
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3494,7 +3494,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:37.831
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.147
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3505,7 +3505,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:37.832
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.149
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3516,7 +3516,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:37.834
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.152
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3527,7 +3527,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:37.836
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.154
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3538,7 +3538,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:37.837
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.155
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3549,7 +3549,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:38.109
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.425
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3560,7 +3560,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:38.111
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.427
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3571,7 +3571,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:38.113
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.428
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3582,7 +3582,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:38.113
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.429
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3593,7 +3593,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:38.114
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.430
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3604,7 +3604,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-07-27 16:10:38.139
+!ENTRY org.eclipse.cdt.core 4 0 2018-07-29 11:22:48.472
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -3642,5 +3642,5 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-27 16:10:41.305
+!ENTRY org.eclipse.core.resources 2 10035 2018-07-29 11:22:51.523
 !MESSAGE The workspace will exit with unsaved changes in this session.

@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="control_sub" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1532666107"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1532666107"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1532666107"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1532783027"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1532783027"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1532783027"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/control_sub_axi_interconnect_0_0/control_sub_axi_interconnect_0_0.xci" Type="IP">
         <Instance HierarchyPath="dma_sub/axi_interconnect_0"/>

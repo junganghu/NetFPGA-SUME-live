@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="xilinx.gnu.mb.exe.debug.861211280;xilinx.gnu.mb.exe.debug.861211280.">
+<instance id="xilinx.gnu.mb.exe.debug.698948950;xilinx.gnu.mb.exe.debug.698948950.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include"/>
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include-fixed"/>
@@ -222,7 +222,7 @@
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.mb.exe.release.1763645655;xilinx.gnu.mb.exe.release.1763645655.">
+<instance id="xilinx.gnu.mb.exe.release.1887809056;xilinx.gnu.mb.exe.release.1887809056.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include"/>
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include-fixed"/>
@@ -444,7 +444,7 @@
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.mb.exe.debug.861211280;xilinx.gnu.mb.exe.debug.861211280.;xilinx.gnu.mb.c.toolchain.compiler.debug.486595454;xilinx.gnu.compiler.input.1402591228">
+<instance id="xilinx.gnu.mb.exe.debug.698948950;xilinx.gnu.mb.exe.debug.698948950.;xilinx.gnu.mb.c.toolchain.compiler.debug.1642404046;xilinx.gnu.compiler.input.388530639">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include"/>
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include-fixed"/>
@@ -666,7 +666,7 @@
 <definedSymbol symbol="__MICROBLAZEEB__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.mb.exe.release.1763645655;xilinx.gnu.mb.exe.release.1763645655.;xilinx.gnu.mb.c.toolchain.compiler.release.927786523;xilinx.gnu.compiler.input.1425099778">
+<instance id="xilinx.gnu.mb.exe.release.1887809056;xilinx.gnu.mb.exe.release.1887809056.;xilinx.gnu.mb.c.toolchain.compiler.release.341140742;xilinx.gnu.compiler.input.1786713494">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include"/>
 <includePath path="/opt/Xilinx/SDK/2016.4/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/include-fixed"/>
